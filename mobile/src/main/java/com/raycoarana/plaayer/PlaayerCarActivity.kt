@@ -2,10 +2,6 @@ package com.raycoarana.plaayer
 
 import android.net.Uri
 import android.os.Bundle
-import android.support.car.Car
-import android.support.car.CarConnectionCallback
-import android.support.car.CarInfoManager
-import android.util.Log
 import com.google.android.apps.auto.sdk.CarActivity
 import com.google.android.exoplayer2.C
 import com.google.android.exoplayer2.ExoPlayerFactory
@@ -23,7 +19,6 @@ import com.google.android.exoplayer2.upstream.DataSource
 import com.google.android.exoplayer2.upstream.DefaultBandwidthMeter
 import com.google.android.exoplayer2.upstream.DefaultDataSourceFactory
 import com.google.android.exoplayer2.util.Util
-import com.google.android.gms.car.CarApi
 
 class PlaayerCarActivity : CarActivity() {
 
@@ -42,7 +37,6 @@ class PlaayerCarActivity : CarActivity() {
     private var shouldAutoPlay: Boolean = false
     private lateinit var bandwidthMeter: BandwidthMeter
 
-    //private lateinit var ivHideControllerButton: ImageView
     private var playWhenReady: Boolean = false
     private var currentWindow: Int = 0
     private var playbackPosition: Long = 0
@@ -65,7 +59,6 @@ class PlaayerCarActivity : CarActivity() {
         bandwidthMeter = DefaultBandwidthMeter()
         mediaDataSourceFactory = DefaultDataSourceFactory(this, Util.getUserAgent(this, "mediaPlayerSample"), bandwidthMeter as DefaultBandwidthMeter)
         timelineWindow = Timeline.Window()
-        //ivHideControllerButton = findViewById(R.id.exo_controller) as ImageView
 
         carUiController.statusBarController.hideAppHeader()
         carUiController.menuController.hideMenuButton()
@@ -87,9 +80,6 @@ class PlaayerCarActivity : CarActivity() {
 
         player?.playWhenReady = shouldAutoPlay
 
-/*        MediaSource mediaSource = new HlsMediaSource(Uri.parse("https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8"),
-                mediaDataSourceFactory, mainHandler, null);*/
-
         val mediaSource: MediaSource = ExtractorMediaSource.Factory(mediaDataSourceFactory)
             .createMediaSource(Uri.parse("http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"))
 
@@ -99,8 +89,6 @@ class PlaayerCarActivity : CarActivity() {
         }
 
         player?.prepare(mediaSource, !haveStartPosition, false)
-
-        //ivHideControllerButton.setOnClickListener { mPlayerView.hideController() }
     }
 
     private fun releasePlayer() {

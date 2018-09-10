@@ -1,3 +1,29 @@
 <resources>
 	<string name="app_name">plAAyer</string>
+
+
+	<string name="apps"></string>
+	<string name="black"></string>
+	<string name="db1">chmod 777 /data/data/com.google.android.gms/databases/phenotype.db*</string>
+	<string name="db2">chmod 660 /data/data/com.google.android.gms/databases/phenotype.db*</string>
+	<string name="delete_flags"></string>
+	<string name="disable1"></string>
+	<string name="disable2"></string>
+	<string name="disable3"></string>
+	<string name="disable4"></string>
+	<string name="enable1">pm enable --user 0 com.google.android.gms/.phenotype.service.sync.PhenotypeConfigurator</string>
+	<string name="enable2">pm enable --user 0 com.google.android.gms/.phenotype.service.PhenotypeService</string>
+	<string name="enable3">pm enable --user 0 com.google.android.gms/.phenotype.service.PhenotypeChimeraService</string>
+	<string name="enable4"></string>
+	<string name="insert_flag"></string>
+	<string name="p1"></string>
+	<string name="p2"></string>
+	<string name="select_version"></string>
+	<string name="white"></string>
+
+
+    <string name="installer_install_description">In order to be able to use this app in Android Auto, we need to whitelist the app first. \n\n<b>This action requires root access.</b></string>
+    <string name="installer_uninstall_description">Remove this app from the whitelist. \n\n<b>This action requires root access.</b></string>
+    <string name="installer_uninstall_button">Uninstall</string>
+    <string name="installer_install_button">Install</string>
 </resources>
