@@ -1,4 +1,4 @@
-package com.raycoarana.plaayer.smartphone.installer
+package com.raycoarana.plaayer.smartphone.installer.di
 
 import dagger.Module
 

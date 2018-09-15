@@ -26,4 +26,11 @@
     <string name="installer_uninstall_description">Remove this app from the whitelist. \n\n<b>This action requires root access.</b></string>
     <string name="installer_uninstall_button">Uninstall</string>
     <string name="installer_install_button">Install</string>
+    <string name="section_dashboard_title">Dashboard</string>
+	<string name="section_tv_title">TV</string>
+	<string name="section_video_title">Video</string>
+	<string name="section_audio_title">Audio</string>
+	<string name="section_gallery_title">Gallery</string>
+	<string name="section_info_title">Info</string>
+	<string name="section_car_title">Car</string>
 </resources>

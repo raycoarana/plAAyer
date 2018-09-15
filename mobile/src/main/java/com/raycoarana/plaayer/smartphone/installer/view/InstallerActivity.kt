@@ -1,4 +1,4 @@
-package com.raycoarana.plaayer.smartphone.installer
+package com.raycoarana.plaayer.smartphone.installer.view
 
 import android.databinding.DataBindingUtil
 import android.os.Bundle
@@ -7,6 +7,7 @@ import com.raycoarana.plaayer.R
 import com.raycoarana.plaayer.common.fromAppComponentOf
 import com.raycoarana.plaayer.core.di.ActivityModule
 import com.raycoarana.plaayer.databinding.ActivityInstallerBinding
+import com.raycoarana.plaayer.smartphone.installer.viewmodel.InstallerViewModel
 import javax.inject.Inject
 
 class InstallerActivity : AppCompatActivity() {

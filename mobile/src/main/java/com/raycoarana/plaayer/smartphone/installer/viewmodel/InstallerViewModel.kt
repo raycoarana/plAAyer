@@ -1,4 +1,4 @@
-package com.raycoarana.plaayer.smartphone.installer
+package com.raycoarana.plaayer.smartphone.installer.viewmodel
 
 import com.raycoarana.plaayer.smartphone.installer.domain.Phenotype
 import com.raycoarana.plaayer.core.ui.FeedbackFactory
