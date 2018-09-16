@@ -3,12 +3,12 @@ package com.raycoarana.plaayer.car.main.viewmodel
 import com.raycoarana.plaayer.R
 import com.raycoarana.plaayer.car.core.Navigator
 import com.raycoarana.plaayer.car.main.domain.AppSection
-import com.raycoarana.plaayer.core.CarResourceProvider
+import com.raycoarana.plaayer.core.ResourceProvider
 import javax.inject.Inject
 
 class CarViewModel @Inject constructor(
         private val navigator: Navigator,
-        private val resourceProvider: CarResourceProvider,
+        private val resourceProvider: ResourceProvider,
         main: MainViewModel
 ) {
     val menuItems: List<SectionItemViewModel> = listOf(Pair(getDashboardTitle(), AppSection.DASHBOARD))

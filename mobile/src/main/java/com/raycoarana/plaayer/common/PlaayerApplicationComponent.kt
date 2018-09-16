@@ -5,7 +5,9 @@ import com.raycoarana.plaayer.core.di.ActivityModule
 import com.raycoarana.plaayer.core.di.CarActivityModule
 import com.raycoarana.plaayer.smartphone.installer.di.InstallerActivityComponent
 import dagger.Component
+import javax.inject.Singleton
 
+@Singleton
 @Component(modules = [PlaayerApplicationModule::class])
 interface PlaayerApplicationComponent {
 

@@ -3,12 +3,12 @@ package com.raycoarana.plaayer.car.main.viewmodel
 import com.raycoarana.plaayer.R
 import com.raycoarana.plaayer.car.core.Navigator
 import com.raycoarana.plaayer.car.main.domain.AppSection
-import com.raycoarana.plaayer.core.CarResourceProvider
+import com.raycoarana.plaayer.core.ResourceProvider
 import javax.inject.Inject
 
 class MainViewModel @Inject constructor(
         navigator: Navigator,
-        resourceProvider: CarResourceProvider
+        resourceProvider: ResourceProvider
 ) {
     val items: List<SectionItemViewModel> = listOf(
             SectionItemViewModel(navigator, resourceProvider.getString(R.string.section_tv_title), AppSection.LIVE_TV),

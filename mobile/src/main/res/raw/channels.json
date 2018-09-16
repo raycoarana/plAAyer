@@ -1,0 +1,194 @@
+{
+  "channels": [
+    {
+      "id": 10001,
+      "title": "La1",
+      "source": "http://www.rtve.es/directo/la-1/",
+      "stream": {
+        "type": "576p",
+        "url": "http://hlsliveamdgl7-lh.akamaihd.net/i/hlslive_1@583043/index_1500_av-b.m3u8?sd=10&rebase=on"
+      },
+      "logo": "channel_tve1"
+    },
+    {
+      "id": 10002,
+      "title": "La2",
+      "source": "http://www.rtve.es/directo/la-2/",
+      "stream": {
+        "type": "576p",
+        "url": "http://rtvev4-live.hss.adaptive.level3.net/egress/ahandler/rtvegl0/la2_lv3_aosv4_gl0/la2_lv3_aosv4_gl0.isml/la2_lv3_aosv4_gl0-audio=128000-video=1500000.m3u8"
+      },
+      "logo": "channel_tve2"
+    },
+    {
+      "id": 10003,
+      "title": "Antena 3",
+      "source": "https://www.atresplayer.com/directos/antena3/",
+      "stream": {
+        "type": "720p",
+        "url": "https://livepull1.secure.footprint.net/geoantena3mpp/bitrate_3.m3u8"
+      },
+      "logo": "channel_antena3"
+    },
+    {
+      "id": 10004,
+      "title": "Cuatro",
+      "source": "https://www.mitele.es/directo/cuatro",
+      "stream": {
+        "type": "720p_1564k",
+        "url": "https://livehlsdai-i.akamaihd.net/hls/live/571643/cuatro/bitrate_3.m3u8"
+      },
+      "logo": "channel_cuatro"
+    },
+    {
+      "id": 10005,
+      "title": "Tele5",
+      "source": "https://www.mitele.es/directo/telecinco",
+      "stream": {
+        "type": "720p_1564k",
+        "url": "https://livehlsdai-i.akamaihd.net/hls/live/571640/telecinco/bitrate_3.m3u8"
+      },
+      "logo": "channel_telecinco"
+    },
+    {
+      "id": 10006,
+      "title": "laSexta",
+      "source": "https://www.atresplayer.com/directos/lasexta/",
+      "stream": {
+        "type": "720p_1564k",
+        "url": "https://livepull1.secure.footprint.net/lasextampp/bitrate_3.m3u8"
+      },
+      "logo": "channel_la_sexta"
+    },
+    {
+      "id": 10007,
+      "title": "neox",
+      "source": "https://www.atresplayer.com/directos/neox/",
+      "stream": {
+        "type": "720p",
+        "url": "https://livepull1.secure.footprint.net/geoneoxmpp/bitrate_3.m3u8"
+      },
+      "logo": "channel_neox"
+    },
+    {
+      "id": 10008,
+      "title": "mega",
+      "source": "https://www.atresplayer.com/directos/mega/",
+      "stream": {
+        "type": "720p",
+        "url": "https://livepull1-i.akamaized.net/geomegampp/bitrate_3.m3u8"
+      },
+      "logo": "channel_mega"
+    },
+    {
+      "id": 10009,
+      "title": "nova",
+      "source": "https://www.atresplayer.com/directos/nova/",
+      "stream": {
+        "type": "720p",
+        "url": "https://livepull1.secure.footprint.net/geonovampp/bitrate_3.m3u8"
+      },
+      "logo": "channel_nova"
+    },
+    {
+      "id": 10010,
+      "title": "atreseries",
+      "source": "https://www.atresplayer.com/directos/atreseries/",
+      "stream": {
+        "type": "720p",
+        "url": "https://livepull1-i.akamaized.net/geoa3seriesmpp/bitrate_3.m3u8"
+      },
+      "logo": "channel_atreseries"
+    },
+    {
+      "id": 10011,
+      "title": "BeMad",
+      "source": "https://www.mitele.es/directo/bemad",
+      "stream": {
+        "type": "720p_1564k",
+        "url": "https://mdslivehlsb-i.akamaihd.net/hls/live/623615/bemad/bitrate_3.m3u8"
+      },
+      "logo": "channel_bemad"
+    },
+    {
+      "id": 10012,
+      "title": "Energy",
+      "source": "https://www.mitele.es/directo/energy",
+      "stream": {
+        "type": "720p_1564k",
+        "url": "https://mdslivehlsb-i.akamaihd.net/hls/live/623617/energy/bitrate_3.m3u8"
+      },
+      "logo": "channel_energy"
+    },
+    {
+      "id": 10013,
+      "title": "Boing",
+      "source": "https://www.mitele.es/directo/boing",
+      "stream": {
+        "type": "720p_1564k",
+        "url": "https://mdslivehlsb-i.akamaihd.net/hls/live/623616/boing/bitrate_3.m3u8"
+      },
+      "logo": "channel_boing"
+    },
+    {
+      "id": 10014,
+      "title": "Divinity",
+      "source": "https://www.mitele.es/directo/divinity",
+      "stream": {
+        "type": "720p_1564k",
+        "url": "https://mdslivehls-i.akamaihd.net/hls/live/571648/divinity/bitrate_1.m3u8"
+      },
+      "logo": "channel_divinity"
+    },
+    {
+      "id": 10015,
+      "title": "FdF",
+      "source": "https://www.mitele.es/directo/fdf",
+      "stream": {
+        "type": "720p_1564k",
+        "url": "https://mdslivehls-i.akamaihd.net/hls/live/571650/fdf/bitrate_3.m3u8"
+      },
+      "logo": "channel_fdf"
+    },
+    {
+      "id": 10016,
+      "title": "Teledeporte",
+      "source": "http://www.rtve.es/directo/teledeporte/",
+      "stream": {
+        "type": "576p",
+        "url": "http://rtvev4-live.hss.adaptive.level3.net/egress/ahandler/rtvegl1/tdp_onlydash_lv3_aosv4_gl1/tdp_onlydash_lv3_aosv4_gl1.isml/tdp_onlydash_lv3_aosv4_gl1-audio=128000-video=1500000.m3u8"
+      },
+      "logo": "channel_tdp"
+    },
+    {
+      "id": 10017,
+      "title": "24h",
+      "source": "http://www.rtve.es/directo/canal-24h/",
+      "stream": {
+        "type": "576p",
+        "url": "http://rtvev4-live.hss.adaptive.level3.net/egress/ahandler/rtvegl8/24h_onlydash_lv3_aosv4_gl8/24h_onlydash_lv3_aosv4_gl8.isml/24h_onlydash_lv3_aosv4_gl8-audio=128000-video=1500000.m3u8"
+      },
+      "logo": "channel_24h"
+    },
+    {
+      "id": 10018,
+      "title": "GOL",
+      "source": "http://goltelevision.com/live",
+      "stream": {
+        "type": "1896k",
+        "url": "https://webgol-hls-live-overon.akamaized.net/OveronHttpOrigin/_definst_/webgol_gol24h_MB_1896/chunklist.m3u8?_token_=ip=83.37.182.250~exp=1537133872~acl=%2F%2A~hmac=b9abf071e9ea795d577129e9a31128e981277d4c"
+      },
+      "logo": "channel_gol"
+    },
+    {
+      "id": 10019,
+      "title": "Paramount",
+      "source": "http://www.paramountnetwork.es/programacion/en-directo",
+      "stream": {
+        "type": "best",
+        "url": "http://paramount.live.flumotion.com/live/chunks.m3u8"
+      },
+      "logo": "channel_paramont"
+    }
+  ]
+}
