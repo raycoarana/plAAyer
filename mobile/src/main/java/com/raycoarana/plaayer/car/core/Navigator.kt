@@ -9,6 +9,9 @@ import com.raycoarana.plaayer.R
 import com.raycoarana.plaayer.car.main.domain.AppSection
 import com.raycoarana.plaayer.car.main.view.CarActivity
 import com.raycoarana.plaayer.car.main.view.MainFragment
+import com.raycoarana.plaayer.car.media.domain.model.MediaItem
+import com.raycoarana.plaayer.car.media.view.MediaGridFragment
+import com.raycoarana.plaayer.car.media.view.PhotoViewerFragment
 import com.raycoarana.plaayer.car.player.PlayerFragment
 import com.raycoarana.plaayer.car.tv.view.LiveTvChannelGridFragment
 import com.raycoarana.plaayer.core.di.CarActivityContext
@@ -26,10 +29,20 @@ class Navigator @Inject constructor(@CarActivityContext private val context: Con
         navigateTo(playerFragment, true)
     }
 
+    fun navigateToViewer(photoUri: String) {
+        val fragment = PhotoViewerFragment()
+        val arguments = Bundle()
+        arguments.putString(PhotoViewerFragment.ARGS_DATA_URL, photoUri)
+        fragment.arguments = arguments
+        navigateTo(fragment, true)
+    }
+
     fun navigateToSection(title: String, appSection: AppSection) {
         val fragment = when(appSection) {
             AppSection.DASHBOARD -> MainFragment()
             AppSection.LIVE_TV -> LiveTvChannelGridFragment()
+            AppSection.VIDEO -> MediaGridFragment.build(MediaItem.Type.VIDEO_ITEM)
+            AppSection.GALLERY -> MediaGridFragment.build(MediaItem.Type.PHOTO_ITEM)
             else -> {
                 CarToast.makeText(context, "Not implemented in this version", Toast.LENGTH_SHORT).show()
                 return
@@ -48,16 +61,29 @@ class Navigator @Inject constructor(@CarActivityContext private val context: Con
 
     private fun navigateTo(fragment: Fragment, addToBackStack: Boolean = false) {
         val currentActivity = context as CarActivity
-        val transation = currentActivity.supportFragmentManager.beginTransaction()
+        val transaction = currentActivity.supportFragmentManager.beginTransaction()
                 .replace(R.id.container, fragment)
 
         if (addToBackStack) {
-            transation.addToBackStack(null)
+            transaction.addToBackStack(null)
         }
 
-        transation.commit()
+        transaction.commit()
     }
 
     private fun carUiController() = (context as CarActivity).carUiController
     private fun menuController() = carUiController().menuController
+
+    fun navigateToVideoFolder(path: String, parentPath: String? = null) {
+        navigateTo(MediaGridFragment.build(MediaItem.Type.VIDEO_ITEM, path, parentPath), true)
+    }
+
+    fun navigateToPhotoFolder(path: String, parentPath: String? = null) {
+        navigateTo(MediaGridFragment.build(MediaItem.Type.PHOTO_ITEM, path, parentPath), true)
+    }
+
+    fun navigateBack() {
+        val currentActivity = context as CarActivity
+        currentActivity.supportFragmentManager.popBackStack()
+    }
 }

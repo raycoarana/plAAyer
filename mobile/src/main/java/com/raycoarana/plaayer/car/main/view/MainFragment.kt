@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import com.raycoarana.plaayer.R
 import com.raycoarana.plaayer.car.main.viewmodel.MainViewModel
 import com.raycoarana.plaayer.core.di.DaggerCarFragment
-import com.raycoarana.plaayer.core.ui.GridMarginItemDecorator
+import com.raycoarana.plaayer.core.ui.MarginItemDecorator
 import com.raycoarana.plaayer.databinding.CarFragmentMainBinding
 import javax.inject.Inject
 
@@ -25,7 +25,7 @@ class MainFragment : DaggerCarFragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         binding = CarFragmentMainBinding.bind(view, component)
-        binding.items.addItemDecoration(GridMarginItemDecorator(context!!, R.dimen.grid_horizontal_space, R.dimen.grid_vertical_space))
+        binding.items.addItemDecoration(MarginItemDecorator(context!!, R.dimen.grid_horizontal_space, R.dimen.grid_vertical_space))
         binding.items.layoutManager = GridLayoutManager(context, COLUMNS)
         binding.viewModel = viewModel
     }

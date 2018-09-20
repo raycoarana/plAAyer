@@ -9,7 +9,7 @@ import com.google.android.apps.auto.sdk.ui.FabDrawable
 import com.raycoarana.plaayer.R
 import com.raycoarana.plaayer.car.tv.viewmodel.LiveTvChannelGridViewModel
 import com.raycoarana.plaayer.core.di.DaggerCarFragment
-import com.raycoarana.plaayer.core.ui.GridMarginItemDecorator
+import com.raycoarana.plaayer.core.ui.MarginItemDecorator
 import com.raycoarana.plaayer.databinding.CarFragmentLiveTvChannelGridBinding
 import javax.inject.Inject
 
@@ -26,7 +26,7 @@ class LiveTvChannelGridFragment : DaggerCarFragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         binding = CarFragmentLiveTvChannelGridBinding.bind(view, component)
-        binding.items.addItemDecoration(GridMarginItemDecorator(context!!, R.dimen.grid_horizontal_space, R.dimen.grid_vertical_space))
+        binding.items.addItemDecoration(MarginItemDecorator(context!!, R.dimen.grid_horizontal_space, R.dimen.grid_vertical_space))
         binding.items.layoutManager = GridLayoutManager(context, COLUMNS)
         val fabDrawable = FabDrawable(context)
         fabDrawable.setFabColor(R.color.colorAccent)

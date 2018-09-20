@@ -2,4 +2,6 @@
 <resources>
     <dimen name="grid_horizontal_space">16dp</dimen>
     <dimen name="grid_vertical_space">16dp</dimen>
+    <dimen name="carrousel_horizontal_space">16dp</dimen>
+    <dimen name="carrousel_vertical_space">0dp</dimen>
 </resources>

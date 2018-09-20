@@ -6,7 +6,7 @@ import android.support.annotation.DimenRes
 import android.support.v7.widget.RecyclerView
 import android.view.View
 
-class GridMarginItemDecorator constructor(
+class MarginItemDecorator constructor(
         context: Context,
         @DimenRes horizontalSpaceResId: Int,
         @DimenRes verticalSpaceResId: Int
