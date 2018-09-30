@@ -1,4 +1,4 @@
-package com.raycoarana.plaayer.car.player
+package com.raycoarana.plaayer.car.player.view
 
 import android.media.AudioManager
 import android.net.Uri
@@ -19,7 +19,7 @@ import com.google.android.exoplayer2.trackselection.AdaptiveTrackSelection
 import com.google.android.exoplayer2.trackselection.DefaultTrackSelector
 import com.google.android.exoplayer2.trackselection.TrackSelection
 import com.google.android.exoplayer2.ui.AspectRatioFrameLayout
-import com.google.android.exoplayer2.ui.PlayerView
+import com.google.android.exoplayer2.ui.PlayerView as ExoPlayerView
 import com.google.android.exoplayer2.upstream.BandwidthMeter
 import com.google.android.exoplayer2.upstream.DataSource
 import com.google.android.exoplayer2.upstream.DefaultBandwidthMeter
@@ -27,17 +27,18 @@ import com.google.android.exoplayer2.upstream.DefaultDataSourceFactory
 import com.google.android.exoplayer2.util.Util
 import com.raycoarana.plaayer.R
 import com.raycoarana.plaayer.car.main.view.CarActivity
+import com.raycoarana.plaayer.car.player.presenter.PlayerPresenter
 import com.raycoarana.plaayer.core.di.DaggerCarFragment
 import javax.inject.Inject
 
-class PlayerFragment : DaggerCarFragment() {
-
+class PlayerFragment : DaggerCarFragment(), PlayerView {
     companion object {
         const val KEY_PLAY_WHEN_READY = "playWhenReady"
         const val KEY_WINDOW = "timelineWindow"
         const val KEY_POSITION = "position"
 
-        const val ARGS_DATA_URL = "dataUrl"
+        const val ARGS_DATA_ID = "channelId"
+        const val ARGS_DATA_URL = "url"
         const val ARGS_URL_TYPE = "urlType"
     }
 
@@ -49,7 +50,10 @@ class PlayerFragment : DaggerCarFragment() {
     @Inject
     lateinit var carAudioManager: CarAudioManager
 
-    private lateinit var mPlayerView: PlayerView
+    @Inject
+    lateinit var presenter: PlayerPresenter
+
+    private lateinit var mPlayerView: ExoPlayerView
     private var player: SimpleExoPlayer? = null
 
     private lateinit var timelineWindow: Timeline.Window
@@ -87,7 +91,7 @@ class PlayerFragment : DaggerCarFragment() {
         val carUiController = (context as CarActivity).carUiController
 
 
-        mPlayerView = view.findViewById(R.id.player_view) as PlayerView
+        mPlayerView = view.findViewById(R.id.player_view) as ExoPlayerView
         mPlayerView.requestFocus()
         mPlayerView.setControllerVisibilityListener {
             if (it == View.VISIBLE) {
@@ -98,25 +102,31 @@ class PlayerFragment : DaggerCarFragment() {
                 carUiController.menuController.hideMenuButton()
             }
         }
+
+        val channelId = arguments?.getInt(ARGS_DATA_ID)
+        val url = arguments?.getString(ARGS_DATA_URL)
+        val urlType = arguments?.getString(ARGS_URL_TYPE)
+
+        presenter.initialize(this, channelId, url, urlType)
     }
 
     override fun onStart() {
         super.onStart()
         if (Util.SDK_INT > 23) {
-            initializePlayer()
+            presenter.onReady()
         }
     }
 
     override fun onResume() {
         super.onResume()
         if ((Util.SDK_INT <= 23 || player == null)) {
-            initializePlayer()
+            presenter.onReady()
         }
 
         requestAudioFocus()
     }
 
-    private fun initializePlayer() {
+    override fun initializePlayer(urlType: UrlType, url: String) {
         val videoTrackSelectionFactory: TrackSelection.Factory = AdaptiveTrackSelection.Factory(bandwidthMeter)
 
         trackSelector = DefaultTrackSelector(videoTrackSelectionFactory)
@@ -128,13 +138,10 @@ class PlayerFragment : DaggerCarFragment() {
 
         player?.playWhenReady = shouldAutoPlay
 
-        val dataUrl = arguments?.getString(ARGS_DATA_URL)
-        val urlType = UrlType.values().firstOrNull { it.toString() == arguments?.getString(ARGS_URL_TYPE) }
-                ?: UrlType.FILE
         val mediaSource: MediaSource = when (urlType) {
             UrlType.FILE -> ExtractorMediaSource.Factory(mediaDataSourceFactory)
             UrlType.HLS -> HlsMediaSource.Factory(mediaDataSourceFactory)
-        }.createMediaSource(Uri.parse(dataUrl))
+        }.createMediaSource(Uri.parse(url))
 
         val haveStartPosition: Boolean = currentWindow != C.INDEX_UNSET
         if (haveStartPosition) {
@@ -143,6 +150,11 @@ class PlayerFragment : DaggerCarFragment() {
 
         player?.prepare(mediaSource, !haveStartPosition, false)
     }
+
+    override fun setStreams(currentStreamLabel: String, allStreamLabels: List<String>) {
+        // TODO: Initialize stream quality adapter
+    }
+
 
     private fun requestAudioFocus() {
         try {
@@ -155,7 +167,7 @@ class PlayerFragment : DaggerCarFragment() {
     override fun onPause() {
         super.onPause()
         if (Util.SDK_INT <= 23) {
-            releasePlayer()
+            presenter.onPause()
         }
 
         abandonAudioFocus()
@@ -172,11 +184,11 @@ class PlayerFragment : DaggerCarFragment() {
     override fun onStop() {
         super.onStop()
         if (Util.SDK_INT > 23) {
-            releasePlayer()
+            presenter.onPause()
         }
     }
 
-    private fun releasePlayer() {
+    override fun releasePlayer() {
         if (player != null) {
             updateStartPosition()
             shouldAutoPlay = player?.playWhenReady ?: false

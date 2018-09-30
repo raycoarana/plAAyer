@@ -3,7 +3,7 @@ package com.raycoarana.plaayer.car.media.viewmodel
 import com.raycoarana.plaayer.R
 import com.raycoarana.plaayer.car.core.Navigator
 import com.raycoarana.plaayer.car.media.domain.model.MediaItem
-import com.raycoarana.plaayer.car.player.PlayerFragment
+import com.raycoarana.plaayer.car.player.view.PlayerFragment
 
 class VideoItemViewModel constructor(
         private val navigator: Navigator,

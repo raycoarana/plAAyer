@@ -12,17 +12,17 @@ import com.raycoarana.plaayer.car.main.view.MainFragment
 import com.raycoarana.plaayer.car.media.domain.model.MediaItem
 import com.raycoarana.plaayer.car.media.view.MediaGridFragment
 import com.raycoarana.plaayer.car.media.view.PhotoViewerFragment
-import com.raycoarana.plaayer.car.player.PlayerFragment
+import com.raycoarana.plaayer.car.player.view.PlayerFragment
 import com.raycoarana.plaayer.car.tv.view.LiveTvChannelGridFragment
 import com.raycoarana.plaayer.core.di.CarActivityContext
 import javax.inject.Inject
 
 class Navigator @Inject constructor(@CarActivityContext private val context: Context) {
 
-    fun navigateToPlayer(title: String, videoUri: String, urlType: PlayerFragment.UrlType) {
+    fun navigateToPlayer(id: Int, title: String, urlType: PlayerFragment.UrlType) {
         val playerFragment = PlayerFragment()
         val arguments = Bundle()
-        arguments.putString(PlayerFragment.ARGS_DATA_URL, videoUri)
+        arguments.putInt(PlayerFragment.ARGS_DATA_ID, id)
         arguments.putString(PlayerFragment.ARGS_URL_TYPE, urlType.toString())
         playerFragment.arguments = arguments
         carUiController().statusBarController.setTitle(title)

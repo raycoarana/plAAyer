@@ -4,191 +4,242 @@
       "id": 10001,
       "title": "La1",
       "source": "http://www.rtve.es/directo/la-1/",
-      "stream": {
-        "type": "576p",
-        "url": "http://hlsliveamdgl7-lh.akamaihd.net/i/hlslive_1@583043/index_1500_av-b.m3u8?sd=10&rebase=on"
-      },
-      "logo": "channel_tve1"
+      "default": "http://hlsliveamdgl7-lh.akamaihd.net/i/hlslive_1@583043/index_0400_av-b.m3u8?sd=10&rebase=on",
+      "logo": "channel_tve1",
+      "streams": {
+        "270p_alt ": "http://hlsliveamdgl1-lh.akamaihd.net/i/hlslive_1@584097/index_0400_av-b.m3u8?sd=10&rebase=on",
+        "270p": "http://hlsliveamdgl1-lh.akamaihd.net/i/hlslive_1@584097/index_0400_av-p.m3u8?sd=10&rebase=on",
+        "360p_alt": "http://hlsliveamdgl1-lh.akamaihd.net/i/hlslive_1@584097/index_0650_av-b.m3u8?sd=10&rebase=on",
+        "360p": "http://hlsliveamdgl1-lh.akamaihd.net/i/hlslive_1@584097/index_0650_av-p.m3u8?sd=10&rebase=on",
+        "576p_alt": "http://hlsliveamdgl1-lh.akamaihd.net/i/hlslive_1@584097/index_1500_av-p.m3u8?sd=10&rebase=on",
+        "576p ": "http://hlsliveamdgl1-lh.akamaihd.net/i/hlslive_1@584097/index_1500_av-b.m3u8?sd=10&rebase=on"
+      }
     },
     {
       "id": 10002,
       "title": "La2",
       "source": "http://www.rtve.es/directo/la-2/",
-      "stream": {
-        "type": "576p",
-        "url": "http://rtvev4-live.hss.adaptive.level3.net/egress/ahandler/rtvegl0/la2_lv3_aosv4_gl0/la2_lv3_aosv4_gl0.isml/la2_lv3_aosv4_gl0-audio=128000-video=1500000.m3u8"
-      },
-      "logo": "channel_tve2"
+      "default": "http://rtvev4-live.hss.adaptive.level3.net/egress/ahandler/rtvegl0/la2_lv3_aosv4_gl0/la2_lv3_aosv4_gl0.isml/la2_lv3_aosv4_gl0-audio=128000-video=1500000.m3u8",
+      "logo": "channel_tve2",
+      "streams": {
+        "default": "http://rtvev4-live.hss.adaptive.level3.net/egress/ahandler/rtvegl0/la2_lv3_aosv4_gl0/la2_lv3_aosv4_gl0.isml/la2_lv3_aosv4_gl0-audio=128000-video=1500000.m3u8"
+      }
     },
     {
       "id": 10003,
       "title": "Antena 3",
       "source": "https://www.atresplayer.com/directos/antena3/",
-      "stream": {
-        "type": "720p",
-        "url": "https://livepull1.secure.footprint.net/geoantena3mpp/bitrate_3.m3u8"
-      },
-      "logo": "channel_antena3"
+      "default": "https://livepull1.secure.footprint.net/geoantena3mpp/bitrate_1.m3u8",
+      "logo": "channel_antena3",
+      "streams": {
+        "360p ": "https://livepull1.secure.footprint.net/antena3mpp/bitrate_1.m3u8",
+        "404p": "https://livepull1.secure.footprint.net/antena3mpp/bitrate_2.m3u8",
+        "720p": "https://livepull1.secure.footprint.net/antena3mpp/bitrate_3.m3u8",
+        "1080p ": "https://livepull1.secure.footprint.net/antena3mpp/bitrate_4.m3u8"
+      }
     },
     {
       "id": 10004,
       "title": "Cuatro",
       "source": "https://www.mitele.es/directo/cuatro",
-      "stream": {
-        "type": "720p_1564k",
-        "url": "https://livehlsdai-i.akamaihd.net/hls/live/571643/cuatro/bitrate_3.m3u8"
-      },
-      "logo": "channel_cuatro"
+      "default": "https://livehlsdai-i.akamaihd.net/hls/live/571643/cuatro/bitrate_1.m3u8",
+      "logo": "channel_cuatro",
+      "streams": {
+        "360p_364k ": "https://livehlsdai-i.akamaihd.net/hls/live/571643/cuatro/bitrate_1.m3u8",
+        "480p_764k": "https://livehlsdai-i.akamaihd.net/hls/live/571643/cuatro/bitrate_2.m3u8",
+        "720p_1564k": "https://livehlsdai-i.akamaihd.net/hls/live/571643/cuatro/bitrate_3.m3u8",
+        "720p_2564k ": "https://livehlsdai-i.akamaihd.net/hls/live/571643/cuatro/bitrate_4.m3u8"
+      }
     },
     {
       "id": 10005,
       "title": "Tele5",
       "source": "https://www.mitele.es/directo/telecinco",
-      "stream": {
-        "type": "720p_1564k",
-        "url": "https://livehlsdai-i.akamaihd.net/hls/live/571640/telecinco/bitrate_3.m3u8"
-      },
-      "logo": "channel_telecinco"
+      "default": "https://livehlsdai-i.akamaihd.net/hls/live/571640/telecinco/bitrate_1.m3u8",
+      "logo": "channel_telecinco",
+      "streams": {
+        "360p_364k ": "https://livehlsdai-i.akamaihd.net/hls/live/571640/telecinco/bitrate_1.m3u8",
+        "480p_764k": "https://livehlsdai-i.akamaihd.net/hls/live/571640/telecinco/bitrate_2.m3u8",
+        "720p_1564k": "https://livehlsdai-i.akamaihd.net/hls/live/571640/telecinco/bitrate_3.m3u8",
+        "720p_2564k ": "https://livehlsdai-i.akamaihd.net/hls/live/571640/telecinco/bitrate_4.m3u8"
+      }
     },
     {
       "id": 10006,
       "title": "laSexta",
       "source": "https://www.atresplayer.com/directos/lasexta/",
-      "stream": {
-        "type": "720p_1564k",
-        "url": "https://livepull1.secure.footprint.net/lasextampp/bitrate_3.m3u8"
-      },
-      "logo": "channel_la_sexta"
+      "default": "https://livepull1.secure.footprint.net/lasextampp/bitrate_1.m3u8",
+      "logo": "channel_la_sexta",
+      "streams": {
+        "360p ": "https://livepull1.secure.footprint.net/geolasextampp/bitrate_1.m3u8",
+        "404p": "https://livepull1.secure.footprint.net/geolasextampp/bitrate_2.m3u8",
+        "720p": "https://livepull1.secure.footprint.net/geolasextampp/bitrate_3.m3u8",
+        "1080p ": "https://livepull1.secure.footprint.net/geolasextampp/bitrate_4.m3u8"
+      }
     },
     {
       "id": 10007,
       "title": "neox",
       "source": "https://www.atresplayer.com/directos/neox/",
-      "stream": {
-        "type": "720p",
-        "url": "https://livepull1.secure.footprint.net/geoneoxmpp/bitrate_3.m3u8"
-      },
-      "logo": "channel_neox"
+      "default": "https://livepull1.secure.footprint.net/geoneoxmpp/bitrate_1.m3u8",
+      "logo": "channel_neox",
+      "streams": {
+        "360p ": "https://livepull1.secure.footprint.net/geoneoxmpp/bitrate_1.m3u8",
+        "404p": "https://livepull1.secure.footprint.net/geoneoxmpp/bitrate_2.m3u8",
+        "720p": "https://livepull1.secure.footprint.net/geoneoxmpp/bitrate_3.m3u8",
+        "1080p ": "https://livepull1.secure.footprint.net/geoneoxmpp/bitrate_4.m3u8"
+      }
     },
     {
       "id": 10008,
       "title": "mega",
       "source": "https://www.atresplayer.com/directos/mega/",
-      "stream": {
-        "type": "720p",
-        "url": "https://livepull1-i.akamaized.net/geomegampp/bitrate_3.m3u8"
-      },
-      "logo": "channel_mega"
+      "default": "https://livepull1-i.akamaized.net/geomegampp/bitrate_1.m3u8",
+      "logo": "channel_mega",
+      "streams": {
+        "360p ": "https://livepull1-i.akamaized.net/geomegampp/bitrate_1.m3u8",
+        "404p": "https://livepull1-i.akamaized.net/geomegampp/bitrate_2.m3u8",
+        "720p": "https://livepull1-i.akamaized.net/geomegampp/bitrate_3.m3u8",
+        "1080p ": "https://livepull1-i.akamaized.net/geomegampp/bitrate_4.m3u8"
+      }
     },
     {
       "id": 10009,
       "title": "nova",
       "source": "https://www.atresplayer.com/directos/nova/",
-      "stream": {
-        "type": "720p",
-        "url": "https://livepull1.secure.footprint.net/geonovampp/bitrate_3.m3u8"
-      },
-      "logo": "channel_nova"
+      "default": "https://livepull1.secure.footprint.net/geonovampp/bitrate_1.m3u8",
+      "logo": "channel_nova",
+      "streams": {
+        "360p ": "https://livepull1.secure.footprint.net/novampp/bitrate_1.m3u8",
+        "404p": "https://livepull1.secure.footprint.net/novampp/bitrate_2.m3u8",
+        "720p": "https://livepull1.secure.footprint.net/novampp/bitrate_3.m3u8",
+        "1080p ": "https://livepull1.secure.footprint.net/novampp/bitrate_4.m3u8"
+      }
     },
     {
       "id": 10010,
       "title": "atreseries",
       "source": "https://www.atresplayer.com/directos/atreseries/",
-      "stream": {
-        "type": "720p",
-        "url": "https://livepull1-i.akamaized.net/geoa3seriesmpp/bitrate_3.m3u8"
-      },
-      "logo": "channel_atreseries"
+      "default": "https://livepull1-i.akamaized.net/geoa3seriesmpp/bitrate_1.m3u8",
+      "logo": "channel_atreseries",
+      "streams": {
+        "360p ": "https://a3series-pull2a-a3player.secure.footprint.net/geoa3series/bitrate_1.m3u8",
+        "404p": "https://a3series-pull2a-a3player.secure.footprint.net/geoa3series/bitrate_2.m3u8",
+        "720p": "https://a3series-pull2a-a3player.secure.footprint.net/geoa3series/bitrate_3.m3u8",
+        "1080p ": "https://a3series-pull2a-a3player.secure.footprint.net/geoa3series/bitrate_4.m3u8"
+      }
     },
     {
       "id": 10011,
       "title": "BeMad",
       "source": "https://www.mitele.es/directo/bemad",
-      "stream": {
-        "type": "720p_1564k",
-        "url": "https://mdslivehlsb-i.akamaihd.net/hls/live/623615/bemad/bitrate_3.m3u8"
-      },
-      "logo": "channel_bemad"
+      "default": "https://mdslivehlsb-i.akamaihd.net/hls/live/623615/bemad/bitrate_1.m3u8",
+      "logo": "channel_bemad",
+      "streams": {
+        "360p_364k ": "https://mdslivehlsb-i.akamaihd.net/hls/live/623615/bemad/bitrate_1.m3u8",
+        "480p_764k": "https://mdslivehlsb-i.akamaihd.net/hls/live/623615/bemad/bitrate_2.m3u8",
+        "720p_1564k": "https://mdslivehlsb-i.akamaihd.net/hls/live/623615/bemad/bitrate_3.m3u8",
+        "720p_2564k ": "https://mdslivehlsb-i.akamaihd.net/hls/live/623615/bemad/bitrate_4.m3u8"
+      }
     },
     {
       "id": 10012,
       "title": "Energy",
       "source": "https://www.mitele.es/directo/energy",
-      "stream": {
-        "type": "720p_1564k",
-        "url": "https://mdslivehlsb-i.akamaihd.net/hls/live/623617/energy/bitrate_3.m3u8"
-      },
-      "logo": "channel_energy"
+      "default": "https://mdslivehlsb-i.akamaihd.net/hls/live/623617/energy/bitrate_1.m3u8",
+      "logo": "channel_energy",
+      "streams": {
+        "360p_364k ": "https://mdslivehlsb-i.akamaihd.net/hls/live/623617/energy/bitrate_1.m3u8",
+        "480p_764k": "https://mdslivehlsb-i.akamaihd.net/hls/live/623617/energy/bitrate_2.m3u8",
+        "720p_1564k": "https://mdslivehlsb-i.akamaihd.net/hls/live/623617/energy/bitrate_3.m3u8",
+        "720p_2564k ": "https://mdslivehlsb-i.akamaihd.net/hls/live/623617/energy/bitrate_4.m3u8"
+      }
     },
     {
       "id": 10013,
       "title": "Boing",
       "source": "https://www.mitele.es/directo/boing",
-      "stream": {
-        "type": "720p_1564k",
-        "url": "https://mdslivehlsb-i.akamaihd.net/hls/live/623616/boing/bitrate_3.m3u8"
-      },
-      "logo": "channel_boing"
+      "default": "https://mdslivehlsb-i.akamaihd.net/hls/live/623616/boing/bitrate_1.m3u8",
+      "logo": "channel_boing",
+      "streams": {
+        "360p_364k ": "https://mdslivehlsb-i.akamaihd.net/hls/live/623616/boing/bitrate_1.m3u8",
+        "480p_764k": "https://mdslivehlsb-i.akamaihd.net/hls/live/623616/boing/bitrate_2.m3u8",
+        "720p_1564k": "https://mdslivehlsb-i.akamaihd.net/hls/live/623616/boing/bitrate_3.m3u8",
+        "720p_2564k ": "https://mdslivehlsb-i.akamaihd.net/hls/live/623616/boing/bitrate_4.m3u8"
+      }
     },
     {
       "id": 10014,
       "title": "Divinity",
       "source": "https://www.mitele.es/directo/divinity",
-      "stream": {
-        "type": "720p_1564k",
-        "url": "https://mdslivehls-i.akamaihd.net/hls/live/571648/divinity/bitrate_1.m3u8"
-      },
-      "logo": "channel_divinity"
+      "default": "https://mdslivehls-i.akamaihd.net/hls/live/571648/divinity/bitrate_1.m3u8",
+      "logo": "channel_divinity",
+      "streams": {
+        "360p_364k ": "https://mdslivehls-i.akamaihd.net/hls/live/571648/divinity/bitrate_1.m3u8",
+        "480p_764k": "https://mdslivehls-i.akamaihd.net/hls/live/571648/divinity/bitrate_2.m3u8",
+        "720p_1564k": "https://mdslivehls-i.akamaihd.net/hls/live/571648/divinity/bitrate_3.m3u8",
+        "720p_2564k ": "https://mdslivehls-i.akamaihd.net/hls/live/571648/divinity/bitrate_4.m3u8"
+      }
     },
     {
       "id": 10015,
       "title": "FdF",
       "source": "https://www.mitele.es/directo/fdf",
-      "stream": {
-        "type": "720p_1564k",
-        "url": "https://mdslivehls-i.akamaihd.net/hls/live/571650/fdf/bitrate_3.m3u8"
-      },
-      "logo": "channel_fdf"
+      "default": "https://mdslivehls-i.akamaihd.net/hls/live/571650/fdf/bitrate_1.m3u8",
+      "logo": "channel_fdf",
+      "streams": {
+        "360p_364k ": "https://mdslivehls-i.akamaihd.net/hls/live/571650/fdf/bitrate_1.m3u8",
+        "480p_764k": "https://mdslivehls-i.akamaihd.net/hls/live/571650/fdf/bitrate_2.m3u8",
+        "720p_1564k": "https://mdslivehls-i.akamaihd.net/hls/live/571650/fdf/bitrate_3.m3u8",
+        "720p_2564k ": "https://mdslivehls-i.akamaihd.net/hls/live/571650/fdf/bitrate_4.m3u8"
+      }
     },
     {
       "id": 10016,
       "title": "Teledeporte",
       "source": "http://www.rtve.es/directo/teledeporte/",
-      "stream": {
-        "type": "576p",
-        "url": "http://rtvev4-live.hss.adaptive.level3.net/egress/ahandler/rtvegl1/tdp_onlydash_lv3_aosv4_gl1/tdp_onlydash_lv3_aosv4_gl1.isml/tdp_onlydash_lv3_aosv4_gl1-audio=128000-video=1500000.m3u8"
-      },
-      "logo": "channel_tdp"
+      "default": "http://rtvev4-live.hss.adaptive.level3.net/egress/ahandler/rtvegl1/tdp_onlydash_lv3_aosv4_gl1/tdp_onlydash_lv3_aosv4_gl1.isml/tdp_onlydash_lv3_aosv4_gl1-audio=128000-video=1500000.m3u8",
+      "logo": "channel_tdp",
+      "streams": {
+        "270p ": "http://rtvev4-live.hss.adaptive.level3.net/egress/ahandler/rtvegl1/tdp_onlydash_lv3_aosv4_gl1/tdp_onlydash_lv3_aosv4_gl1.isml/tdp_onlydash_lv3_aosv4_gl1-audio=128000-video=400000.m3u8",
+        "360p": "http://rtvev4-live.hss.adaptive.level3.net/egress/ahandler/rtvegl1/tdp_onlydash_lv3_aosv4_gl1/tdp_onlydash_lv3_aosv4_gl1.isml/tdp_onlydash_lv3_aosv4_gl1-audio=128000-video=650000.m3u8",
+        "576p ": "http://rtvev4-live.hss.adaptive.level3.net/egress/ahandler/rtvegl1/tdp_onlydash_lv3_aosv4_gl1/tdp_onlydash_lv3_aosv4_gl1.isml/tdp_onlydash_lv3_aosv4_gl1-audio=128000-video=1500000.m3u8"
+      }
     },
     {
       "id": 10017,
       "title": "24h",
       "source": "http://www.rtve.es/directo/canal-24h/",
-      "stream": {
-        "type": "576p",
-        "url": "http://rtvev4-live.hss.adaptive.level3.net/egress/ahandler/rtvegl8/24h_onlydash_lv3_aosv4_gl8/24h_onlydash_lv3_aosv4_gl8.isml/24h_onlydash_lv3_aosv4_gl8-audio=128000-video=1500000.m3u8"
-      },
-      "logo": "channel_24h"
+      "default": "http://rtvev4-live.hss.adaptive.level3.net/egress/ahandler/rtvegl8/24h_onlydash_lv3_aosv4_gl8/24h_onlydash_lv3_aosv4_gl8.isml/24h_onlydash_lv3_aosv4_gl8-audio=128000-video=1500000.m3u8",
+      "logo": "channel_24h",
+      "streams": {
+        "270p ": "http://rtvev4-live.hss.adaptive.level3.net/egress/ahandler/rtvegl8/24h_onlydash_lv3_aosv4_gl8/24h_onlydash_lv3_aosv4_gl8.isml/24h_onlydash_lv3_aosv4_gl8-audio=128000-video=400000.m3u8",
+        "360p": "http://rtvev4-live.hss.adaptive.level3.net/egress/ahandler/rtvegl8/24h_onlydash_lv3_aosv4_gl8/24h_onlydash_lv3_aosv4_gl8.isml/24h_onlydash_lv3_aosv4_gl8-audio=128000-video=650000.m3u8",
+        "576p ": "http://rtvev4-live.hss.adaptive.level3.net/egress/ahandler/rtvegl8/24h_onlydash_lv3_aosv4_gl8/24h_onlydash_lv3_aosv4_gl8.isml/24h_onlydash_lv3_aosv4_gl8-audio=128000-video=1500000.m3u8"
+      }
     },
     {
       "id": 10018,
       "title": "GOL",
       "source": "http://goltelevision.com/live",
-      "stream": {
-        "type": "1896k",
-        "url": "https://webgol-hls-live-overon.akamaized.net/OveronHttpOrigin/_definst_/webgol_gol24h_MB_1896/chunklist.m3u8?_token_=ip=83.37.182.250~exp=1537133872~acl=%2F%2A~hmac=b9abf071e9ea795d577129e9a31128e981277d4c"
-      },
-      "logo": "channel_gol"
+      "default": "https://webgol-hls-live-overon.akamaized.net/OveronHttpOrigin/_definst_/webgol_gol24h_MB_1896/chunklist.m3u8?_token_=ip=83.37.182.250~exp=1537133872~acl=%2F%2A~hmac=b9abf071e9ea795d577129e9a31128e981277d4c",
+      "logo": "channel_gol",
+      "streams": {
+        "896k ": "https://webgol-hls-live-overon.akamaized.net/OveronHttpOrigin/_definst_/webgol_gol24h_MB_896/chunklist.m3u8?_token_=ip=83.37.182.250~exp=1537908412~acl=%2F%2A~hmac=afa30616963588b56aff4fa10c5145ee24c18c4a",
+        "1896k": "https://webgol-hls-live-overon.akamaized.net/OveronHttpOrigin/_definst_/webgol_gol24h_MB_1896/chunklist.m3u8?_token_=ip=83.37.182.250~exp=1537908413~acl=%2F%2A~hmac=fe148c78825cf5e4b2fef9c7c22dd9a5328892ad",
+        "2896k": "https://webgol-hls-live-overon.akamaized.net/OveronHttpOrigin/_definst_/webgol_gol24h_MB_2896/chunklist.m3u8?_token_=ip=83.37.182.250~exp=1537908414~acl=%2F%2A~hmac=7600222a1ff63a1c7454230bc3b3260dd86c7f1f",
+        "3496k ": "https://webgol-hls-live-overon.akamaized.net/OveronHttpOrigin/_definst_/webgol_gol24h_MB_3496/chunklist.m3u8?_token_=ip=83.37.182.250~exp=1537908415~acl=%2F%2A~hmac=e7d237723538e3291916446fae64853b820b314f"
+      }
     },
     {
       "id": 10019,
       "title": "Paramount",
       "source": "http://www.paramountnetwork.es/programacion/en-directo",
-      "stream": {
-        "type": "best",
-        "url": "http://paramount.live.flumotion.com/live/chunks.m3u8"
-      },
-      "logo": "channel_paramont"
+      "default": "http://paramount.live.flumotion.com/live/chunks.m3u8",
+      "logo": "channel_paramont",
+      "streams": {
+        "default": "http://paramount.live.flumotion.com/live/chunks.m3u8"
+      }
     }
   ]
 }

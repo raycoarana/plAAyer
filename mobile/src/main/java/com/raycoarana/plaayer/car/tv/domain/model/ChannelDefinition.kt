@@ -6,11 +6,6 @@ data class ChannelDefinition constructor(
         @SerializedName("id") val id: Int,
         @SerializedName("title") val title: String,
         @SerializedName("source") val source: String,
-        @SerializedName("stream") val stream: StreamDefinition,
+        @SerializedName("streams") val streams: LinkedHashMap<String, String>,
         @SerializedName("logo") val logo: String
-)
-
-data class StreamDefinition constructor(
-        @SerializedName("type") val type: String,
-        @SerializedName("url") val url: String
 )
