@@ -15,7 +15,7 @@ class VideoItemViewModel constructor(
         if (isFolder) {
             navigator.navigateToVideoFolder(mediaItem.path, parentPath)
         } else {
-            navigator.navigateToPlayer(mediaItem.title, "file://" + mediaItem.path, PlayerFragment.UrlType.FILE)
+            navigator.navigateToPlayer(mediaItem.title, "file://" + mediaItem.path)
         }
     }
 

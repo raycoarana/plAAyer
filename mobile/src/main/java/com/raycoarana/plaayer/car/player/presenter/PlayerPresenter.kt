@@ -1,5 +1,6 @@
 package com.raycoarana.plaayer.car.player.presenter
 
+import android.util.Log
 import com.raycoarana.awex.Promise
 import com.raycoarana.awex.callbacks.UIDoneCallback
 import com.raycoarana.plaayer.car.player.view.PlayerFragment
@@ -35,13 +36,21 @@ class PlayerPresenter @Inject constructor(
 
     private fun initializeStaticUrl(url: String) {
         this.staticUrl = url
+        Log.d(TAG, "Loading static url: $url")
     }
 
     private fun initializeChannel(channelId: Int) {
+        Log.d(TAG, "Loading channel with Id: $channelId")
+
         channelPromise = channelRepository.getChannel(channelId)
         channelPromise.uiDone(UIDoneCallback { channel ->
+            Log.d(TAG, "Channel metadata loaded with Id: $channel")
+
             val firstStream = channel.streams.first()
             currentStream = firstStream
+
+            Log.d(TAG, "Stream selected: $currentStream")
+
             view.setStreams(firstStream.label, channel.streams.map { stream -> stream.label })
         })
     }
@@ -71,5 +80,9 @@ class PlayerPresenter @Inject constructor(
 
     fun onPause() {
         view.releasePlayer()
+    }
+
+    companion object {
+        private const val TAG = "PlayerPresenter"
     }
 }

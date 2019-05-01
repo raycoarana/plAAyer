@@ -8,16 +8,15 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.google.android.exoplayer2.C
-import com.google.android.exoplayer2.ExoPlayerFactory
-import com.google.android.exoplayer2.SimpleExoPlayer
-import com.google.android.exoplayer2.Timeline
+import com.google.android.exoplayer2.*
 import com.google.android.exoplayer2.source.ExtractorMediaSource
 import com.google.android.exoplayer2.source.MediaSource
+import com.google.android.exoplayer2.source.TrackGroupArray
 import com.google.android.exoplayer2.source.hls.HlsMediaSource
 import com.google.android.exoplayer2.trackselection.AdaptiveTrackSelection
 import com.google.android.exoplayer2.trackselection.DefaultTrackSelector
 import com.google.android.exoplayer2.trackselection.TrackSelection
+import com.google.android.exoplayer2.trackselection.TrackSelectionArray
 import com.google.android.exoplayer2.ui.AspectRatioFrameLayout
 import com.google.android.exoplayer2.ui.PlayerView as ExoPlayerView
 import com.google.android.exoplayer2.upstream.BandwidthMeter
@@ -25,6 +24,7 @@ import com.google.android.exoplayer2.upstream.DataSource
 import com.google.android.exoplayer2.upstream.DefaultBandwidthMeter
 import com.google.android.exoplayer2.upstream.DefaultDataSourceFactory
 import com.google.android.exoplayer2.util.Util
+import com.google.android.exoplayer2.video.VideoListener
 import com.raycoarana.plaayer.R
 import com.raycoarana.plaayer.car.main.view.CarActivity
 import com.raycoarana.plaayer.car.player.presenter.PlayerPresenter
@@ -103,7 +103,7 @@ class PlayerFragment : DaggerCarFragment(), PlayerView {
             }
         }
 
-        val channelId = arguments?.getInt(ARGS_DATA_ID)
+        val channelId = arguments?.getInt(ARGS_DATA_ID, -1)
         val url = arguments?.getString(ARGS_DATA_URL)
         val urlType = arguments?.getString(ARGS_URL_TYPE)
 
@@ -148,7 +148,50 @@ class PlayerFragment : DaggerCarFragment(), PlayerView {
             player?.seekTo(currentWindow, playbackPosition)
         }
 
-        player?.prepare(mediaSource, !haveStartPosition, false)
+        player?.addListener(object : Player.EventListener {
+            override fun onPlaybackParametersChanged(playbackParameters: PlaybackParameters?) {
+                Log.d("CAR", "onPlaybackParametersChanged")
+            }
+
+            override fun onSeekProcessed() {
+                Log.d("CAR", "onSeekProcessed")
+            }
+
+            override fun onTracksChanged(trackGroups: TrackGroupArray?, trackSelections: TrackSelectionArray?) {
+                Log.d("CAR", "onTracksChanged")
+            }
+
+            override fun onPlayerError(error: ExoPlaybackException?) {
+                Log.d("CAR", "onPlayerError: ${error?.message}")
+                player?.prepare(mediaSource, !haveStartPosition, false)
+            }
+
+            override fun onLoadingChanged(isLoading: Boolean) {
+                Log.d("CAR", "onLoadingChanged: $isLoading")
+            }
+
+            override fun onPositionDiscontinuity(reason: Int) {
+                Log.d("CAR", "onPositionDiscontinuity: $reason")
+            }
+
+            override fun onRepeatModeChanged(repeatMode: Int) {
+                Log.d("CAR", "onRepeatModeChanged: $repeatMode")
+            }
+
+            override fun onShuffleModeEnabledChanged(shuffleModeEnabled: Boolean) {
+                Log.d("CAR", "onShuffleModeEnabledChanged: $shuffleModeEnabled")
+            }
+
+            override fun onTimelineChanged(timeline: Timeline?, manifest: Any?, reason: Int) {
+                Log.d("CAR", "onTimelineChanged")
+            }
+
+            override fun onPlayerStateChanged(playWhenReady: Boolean, playbackState: Int) {
+                Log.d("CAR", "onPlayerStateChanged: $playWhenReady $playbackState")
+            }
+
+        })
+        player?.prepare(mediaSource, !haveStartPosition, true)
     }
 
     override fun setStreams(currentStreamLabel: String, allStreamLabels: List<String>) {
@@ -160,7 +203,7 @@ class PlayerFragment : DaggerCarFragment(), PlayerView {
         try {
             carAudioManager.requestAudioFocus(null, carAudioManager.getAudioAttributesForCarUsage(CarAudioManager.CAR_AUDIO_USAGE_DEFAULT), AudioManager.AUDIOFOCUS_GAIN, 0)
         } catch (e: Exception) {
-            Log.d("CAR", "RequestAudioFocus exception: " + e.toString())
+            Log.d("CAR", "RequestAudioFocus exception: $e")
         }
     }
 
@@ -177,7 +220,7 @@ class PlayerFragment : DaggerCarFragment(), PlayerView {
         try {
             carAudioManager.abandonAudioFocus(null, carAudioManager.getAudioAttributesForCarUsage(CarAudioManager.CAR_AUDIO_USAGE_DEFAULT))
         } catch (e: Exception) {
-            Log.d("CAR", "AbandonAudioFocus exception: " + e.toString())
+            Log.d("CAR", "AbandonAudioFocus exception: $e")
         }
     }
 

@@ -29,6 +29,16 @@ class Navigator @Inject constructor(@CarActivityContext private val context: Con
         navigateTo(playerFragment, true)
     }
 
+    fun navigateToPlayer(title: String, fileUri: String) {
+        val playerFragment = PlayerFragment()
+        val arguments = Bundle()
+        arguments.putString(PlayerFragment.ARGS_DATA_URL, fileUri)
+        arguments.putString(PlayerFragment.ARGS_URL_TYPE, PlayerFragment.UrlType.FILE.toString())
+        playerFragment.arguments = arguments
+        carUiController().statusBarController.setTitle(title)
+        navigateTo(playerFragment, true)
+    }
+
     fun navigateToViewer(photoUri: String) {
         val fragment = PhotoViewerFragment()
         val arguments = Bundle()
