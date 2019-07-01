@@ -1,5 +1,6 @@
 package com.raycoarana.plaayer.car.media.view
 
+import android.databinding.DataBindingUtil
 import android.os.Bundle
 import android.support.v7.widget.GridLayoutManager
 import android.support.v7.widget.LinearLayoutManager
@@ -12,6 +13,7 @@ import com.raycoarana.plaayer.car.media.viewmodel.VideoGridViewModel
 import com.raycoarana.plaayer.core.di.DaggerCarFragment
 import com.raycoarana.plaayer.core.ui.MarginItemDecorator
 import com.raycoarana.plaayer.databinding.CarFragmentMediaGridBinding
+import java.lang.Exception
 import javax.inject.Inject
 
 class MediaGridFragment : DaggerCarFragment() {
@@ -29,7 +31,7 @@ class MediaGridFragment : DaggerCarFragment() {
         val mediaItemType = MediaItem.Type.valueOf(arguments?.getString(ARG_MEDIA_TYPE)
                 ?: MediaItem.Type.VIDEO_ITEM.toString())
 
-        binding = CarFragmentMediaGridBinding.bind(view, component)
+        binding = DataBindingUtil.bind(view, component) ?: throw Exception("Invalid view")
         if (mediaItemType == MediaItem.Type.VIDEO_ITEM) {
             binding.items.addItemDecoration(MarginItemDecorator(context!!, R.dimen.carrousel_horizontal_space, R.dimen.carrousel_vertical_space))
         }

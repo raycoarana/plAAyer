@@ -24,7 +24,14 @@
       "default": "http://rtvev4-live.hss.adaptive.level3.net/egress/ahandler/rtvegl0/la2_lv3_aosv4_gl0/la2_lv3_aosv4_gl0.isml/la2_lv3_aosv4_gl0-audio=128000-video=1500000.m3u8",
       "logo": "channel_tve2",
       "streams": {
-        "default": "http://rtvev4-live.hss.adaptive.level3.net/egress/ahandler/rtvegl0/la2_lv3_aosv4_gl0/la2_lv3_aosv4_gl0.isml/la2_lv3_aosv4_gl0-audio=128000-video=1500000.m3u8"
+        "270p_alt ": "http://hlsliveamdgl0-lh.akamaihd.net/i/hlslive_1@586367/index_0400_av-b.m3u8?sd=10&rebase=on",
+        "270p": "http://hlsliveamdgl0-lh.akamaihd.net/i/hlslive_1@586367/index_0400_av-p.m3u8?sd=10&rebase=on",
+        "360p_alt": "http://hlsliveamdgl0-lh.akamaihd.net/i/hlslive_1@586367/index_0650_av-b.m3u8?sd=10&rebase=on",
+        "360p": "http://hlsliveamdgl0-lh.akamaihd.net/i/hlslive_1@586367/index_0650_av-p.m3u8?sd=10&rebase=on",
+        "576p_alt": "http://hlsliveamdgl0-lh.akamaihd.net/i/hlslive_1@586367/index_1500_av-b.m3u8?sd=10&rebase=on",
+        "576p": "http://hlsliveamdgl0-lh.akamaihd.net/i/hlslive_1@586367/index_1500_av-p.m3u8?sd=10&rebase=on",
+        "720p_alt": "http://hlsliveamdgl0-lh.akamaihd.net/i/hlslive_1@586367/index_2800_av-b.m3u8?sd=10&rebase=on",
+        "720p ": "http://hlsliveamdgl0-lh.akamaihd.net/i/hlslive_1@586367/index_2800_av-p.m3u8?sd=10&rebase=on"
       }
     },
     {
@@ -87,7 +94,7 @@
       "id": 10008,
       "title": "mega",
       "source": "https://www.atresplayer.com/directos/mega/",
-      "default": "https://livestartover.atresmedia.com/mega/bitrate_1.m3u8",
+      "default": "https://livestartover.atresmedia.com/geomega/bitrate_1.m3u8",
       "logo": "channel_mega",
       "streams": {
         "default": "https://livestartover.atresmedia.com/geomega/bitrate_1.m3u8"
@@ -97,20 +104,20 @@
       "id": 10009,
       "title": "nova",
       "source": "https://www.atresplayer.com/directos/nova/",
-      "default": "https://livestartover.atresmedia.com/nova/bitrate_1.m3u8",
+      "default": "https://livestartover.atresmedia.com/geonova/bitrate_1.m3u8",
       "logo": "channel_nova",
       "streams": {
-        "default": "https://livestartover.atresmedia.com/nova/bitrate_1.m3u8"
+        "default": "https://livestartover.atresmedia.com/geonova/bitrate_1.m3u8"
       }
     },
     {
       "id": 10010,
       "title": "atreseries",
       "source": "https://www.atresplayer.com/directos/atreseries/",
-      "default": "https://livestartover.atresmedia.com/atreseries/bitrate_1.m3u8",
+      "default": "https://livestartover.atresmedia.com/a3series/bitrate_1.m3u8",
       "logo": "channel_atreseries",
       "streams": {
-        "default": "https://livestartover.atresmedia.com/atreseries/bitrate_1.m3u8"
+        "default": "https://livestartover.atresmedia.com/a3series/bitrate_1.m3u8"
       }
     },
     {

@@ -57,6 +57,7 @@ class MediaRepository @Inject constructor(
     companion object {
         val SUPPORTED_VIDEO_EXTENSIONS = setOf(
                 "mp4",
+                "m4v",
                 "mkv",
                 "mov"
         )

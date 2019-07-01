@@ -1,5 +1,6 @@
 package com.raycoarana.plaayer.car.tv.view
 
+import android.databinding.DataBindingUtil
 import android.os.Bundle
 import android.support.v7.widget.GridLayoutManager
 import android.view.LayoutInflater
@@ -25,7 +26,7 @@ class LiveTvChannelGridFragment : DaggerCarFragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        binding = CarFragmentLiveTvChannelGridBinding.bind(view, component)
+        binding = DataBindingUtil.bind(view, component) ?: throw Exception("Invalid view")
         binding.items.addItemDecoration(MarginItemDecorator(context!!, R.dimen.grid_horizontal_space, R.dimen.grid_vertical_space))
         binding.items.layoutManager = GridLayoutManager(context, COLUMNS)
         val fabDrawable = FabDrawable(context)

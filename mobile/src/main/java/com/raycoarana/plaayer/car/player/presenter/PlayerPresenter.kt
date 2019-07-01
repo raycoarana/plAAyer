@@ -60,7 +60,7 @@ class PlayerPresenter @Inject constructor(
         if (staticUrl != null) {
             view.initializePlayer(urlType, staticUrl)
         } else {
-            channelPromise.uiDone(UIDoneCallback { channel ->
+            channelPromise.uiDone(UIDoneCallback { _ ->
                 currentStream?.let {
                     view.initializePlayer(urlType, it.url)
                 }
