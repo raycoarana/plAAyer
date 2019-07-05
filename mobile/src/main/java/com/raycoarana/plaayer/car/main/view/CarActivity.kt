@@ -8,7 +8,7 @@ import com.google.android.apps.auto.sdk.MenuItem
 import com.raycoarana.plaayer.R
 import com.raycoarana.plaayer.car.main.di.CarActivityComponent
 import com.raycoarana.plaayer.car.main.viewmodel.CarViewModel
-import com.raycoarana.plaayer.common.fromAppComponentOf
+import com.raycoarana.plaayer.common.di.fromAppComponentOf
 import com.raycoarana.plaayer.core.di.CarActivityModule
 import com.raycoarana.plaayer.databinding.CarActivityMainBinding
 import javax.inject.Inject

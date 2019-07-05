@@ -4,7 +4,7 @@ import android.databinding.DataBindingUtil
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import com.raycoarana.plaayer.R
-import com.raycoarana.plaayer.common.fromAppComponentOf
+import com.raycoarana.plaayer.common.di.fromAppComponentOf
 import com.raycoarana.plaayer.core.di.ActivityModule
 import com.raycoarana.plaayer.databinding.ActivityInstallerBinding
 import com.raycoarana.plaayer.smartphone.installer.viewmodel.InstallerViewModel

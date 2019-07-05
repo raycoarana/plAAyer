@@ -9,7 +9,7 @@
             type="com.raycoarana.plaayer.car.media.viewmodel.FileItemViewModel" />
     </data>
 
-    <android.support.constraint.ConstraintLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="128dp"
         android:onClick="@{() -> viewModel.open()}">
@@ -32,5 +32,5 @@
             android:textSize="18sp"
             android:visibility="@{viewModel.folder ? View.VISIBLE : View.GONE}"
             app:layout_constraintBottom_toBottomOf="parent" />
-    </android.support.constraint.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

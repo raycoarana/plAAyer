@@ -9,7 +9,7 @@
             type="com.raycoarana.plaayer.car.media.viewmodel.FileItemViewModel" />
     </data>
 
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         style="@style/CardView.Light"
         android:layout_width="156dp"
         android:layout_height="match_parent"
@@ -40,5 +40,5 @@
                 android:textSize="18sp"
                 app:layout_constraintBottom_toBottomOf="parent" />
         </android.support.constraint.ConstraintLayout>
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 </layout>

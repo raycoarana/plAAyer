@@ -1,4 +1,4 @@
-package com.raycoarana.plaayer.common
+package com.raycoarana.plaayer.common.di
 
 import android.content.Context
 import android.support.v4.app.Fragment

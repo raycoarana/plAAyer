@@ -1,16 +1,9 @@
 package com.raycoarana.plaayer.core.di
 
 import android.content.Context
-import android.os.Bundle
 import android.support.v4.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import com.raycoarana.plaayer.car.main.di.CarFragmentComponent
-import com.raycoarana.plaayer.car.main.viewmodel.MainViewModel
-import com.raycoarana.plaayer.common.fromCarActivityComponentOf
-import com.raycoarana.plaayer.databinding.CarActivityMainBinding
-import javax.inject.Inject
+import com.raycoarana.plaayer.common.di.fromCarActivityComponentOf
 
 abstract class DaggerCarFragment : Fragment() {
 

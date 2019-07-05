@@ -2,11 +2,11 @@ package com.raycoarana.plaayer.car.media.view
 
 import android.databinding.DataBindingUtil
 import android.os.Bundle
-import android.support.v7.widget.GridLayoutManager
-import android.support.v7.widget.LinearLayoutManager
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.raycoarana.plaayer.R
 import com.raycoarana.plaayer.car.media.domain.model.MediaItem
 import com.raycoarana.plaayer.car.media.viewmodel.VideoGridViewModel

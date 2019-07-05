@@ -2,10 +2,10 @@ package com.raycoarana.plaayer.car.tv.view
 
 import android.databinding.DataBindingUtil
 import android.os.Bundle
-import android.support.v7.widget.GridLayoutManager
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.GridLayoutManager
 import com.google.android.apps.auto.sdk.ui.FabDrawable
 import com.raycoarana.plaayer.R
 import com.raycoarana.plaayer.car.tv.viewmodel.LiveTvChannelGridViewModel

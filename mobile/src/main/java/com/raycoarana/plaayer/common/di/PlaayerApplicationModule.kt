@@ -1,4 +1,4 @@
-package com.raycoarana.plaayer.common
+package com.raycoarana.plaayer.common.di
 
 import android.app.Application
 import android.content.Context

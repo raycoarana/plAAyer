@@ -1,4 +1,4 @@
-package com.raycoarana.plaayer.common
+package com.raycoarana.plaayer.common.di
 
 import com.raycoarana.plaayer.car.main.di.CarActivityComponent
 import com.raycoarana.plaayer.core.di.ActivityModule

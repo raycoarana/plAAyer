@@ -3,11 +3,11 @@ package com.raycoarana.plaayer.core.ui
 import android.databinding.BindingAdapter
 import android.databinding.DataBindingUtil
 import android.databinding.ViewDataBinding
-import android.support.v7.util.DiffUtil
-import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.DiffUtil
+import androidx.recyclerview.widget.RecyclerView
 import com.raycoarana.plaayer.BR
 
 @Suppress("UNCHECKED_CAST")
@@ -58,6 +58,6 @@ class BindableDiffUtilCallback<T : ItemViewModel> constructor(
             oldList[oldItemPosition] == newList[newItemPosition]
 }
 
-class BindableViewHolder(itemView: View?) : RecyclerView.ViewHolder(itemView)
+class BindableViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
 
 open class ItemViewModel(val layoutId: Int)

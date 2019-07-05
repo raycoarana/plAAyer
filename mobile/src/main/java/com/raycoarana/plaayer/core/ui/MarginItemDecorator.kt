@@ -3,8 +3,8 @@ package com.raycoarana.plaayer.core.ui
 import android.content.Context
 import android.graphics.Rect
 import android.support.annotation.DimenRes
-import android.support.v7.widget.RecyclerView
 import android.view.View
+import androidx.recyclerview.widget.RecyclerView
 
 class MarginItemDecorator constructor(
         context: Context,
@@ -21,8 +21,8 @@ class MarginItemDecorator constructor(
         verticalSpace = resources.getDimensionPixelOffset(verticalSpaceResId)
     }
 
-    override fun getItemOffsets(outRect: Rect?, view: View?, parent: RecyclerView?, state: RecyclerView.State?) {
+    override fun getItemOffsets(outRect: Rect, view: View, parent: RecyclerView, state: RecyclerView.State) {
         super.getItemOffsets(outRect, view, parent, state)
-        outRect?.set(horizontalSpace, 0, horizontalSpace, verticalSpace)
+        outRect.set(horizontalSpace, 0, horizontalSpace, verticalSpace)
     }
 }
