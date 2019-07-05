@@ -2,6 +2,10 @@ package com.raycoarana.plaayer.common.tv.network
 
 import com.raycoarana.awex.Awex
 import com.raycoarana.plaayer.common.config.UrlConfig
+import com.raycoarana.plaayer.common.tv.network.reader.ChannelListDtoReader
+import com.raycoarana.plaayer.common.tv.network.reader.ChannelListDtoReaderFactory
+import com.raycoarana.plaayer.common.tv.network.reader.EpgDtoReader
+import com.raycoarana.plaayer.common.tv.network.reader.EpgDtoReaderFactory
 import com.raycoarana.plaayer.core.SimplePromise
 import com.raycoarana.plaayer.core.filterNullable
 import com.raycoarana.plaayer.core.newCallWithPromise

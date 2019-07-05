@@ -1,4 +1,4 @@
-package com.raycoarana.plaayer.common.tv.network
+package com.raycoarana.plaayer.common.tv.network.reader
 
 import com.fasterxml.jackson.core.JsonFactory
 import com.fasterxml.jackson.core.JsonParser

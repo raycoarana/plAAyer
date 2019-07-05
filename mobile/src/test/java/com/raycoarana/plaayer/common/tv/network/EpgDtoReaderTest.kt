@@ -1,6 +1,7 @@
 package com.raycoarana.plaayer.common.tv.network
 
 import com.raycoarana.awex.FakeAwex
+import com.raycoarana.plaayer.common.tv.network.reader.EpgDtoReader
 import org.joda.time.DateTime
 import org.joda.time.DateTimeZone
 import org.junit.Assert.*

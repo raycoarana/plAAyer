@@ -2,6 +2,7 @@ package com.raycoarana.plaayer.common.tv.network
 
 import com.fasterxml.jackson.core.JsonFactory
 import com.raycoarana.plaayer.common.tv.network.model.Option
+import com.raycoarana.plaayer.common.tv.network.reader.ChannelListDtoReader
 import org.junit.Assert.assertEquals
 import org.junit.Test
 

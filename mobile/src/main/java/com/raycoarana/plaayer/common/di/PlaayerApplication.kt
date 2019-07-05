@@ -1,6 +1,7 @@
 package com.raycoarana.plaayer.common.di
 
 import android.app.Application
+import com.bugsnag.android.Bugsnag
 
 class PlaayerApplication : Application() {
 
@@ -11,5 +12,6 @@ class PlaayerApplication : Application() {
     override fun onCreate() {
         super.onCreate()
         applicationComponent = DaggerPlaayerApplicationComponent.builder().plaayerApplicationModule(PlaayerApplicationModule(this)).build()
+        Bugsnag.init(this)
     }
 }

@@ -2,6 +2,10 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: "kotlin-kapt"
+apply plugin: 'com.bugsnag.android.gradle'
+
+Properties properties = new Properties()
+properties.load(project.rootProject.file("local.properties").newDataInputStream())
 
 android {
     compileSdkVersion 28
@@ -12,6 +16,8 @@ android {
         versionCode 2
         versionName "2.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        manifestPlaceholders.bugsnagKey = properties.getProperty("bugsnag_key")
     }
     dataBinding {
         enabled = true
@@ -45,6 +51,7 @@ dependencies {
     implementation 'com.squareup.okhttp3:okhttp:4.0.0'
     implementation 'joda-time:joda-time:2.10.2'
     implementation 'com.fasterxml.jackson.core:jackson-core:2.9.9'
+    implementation 'com.bugsnag:bugsnag-android:4.15.0'
 
     implementation 'eu.chainfire:libsuperuser:1.0.0.201704021214'
 
