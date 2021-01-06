@@ -1,0 +1,81 @@
+<resources>
+  <style name="CarButton" parent="@android:style/Widget.ImageButton">
+    <item name="android:paddingLeft">
+      @dimen/car_standard_margin
+    </item>
+    <item name="android:paddingTop">
+      @dimen/car_standard_margin
+    </item>
+    <item name="android:paddingRight">
+      @dimen/car_standard_margin
+    </item>
+    <item name="android:paddingBottom">
+      @dimen/car_standard_margin
+    </item>
+    <item name="android:minWidth">
+      @dimen/car_standard_small_size
+    </item>
+    <item name="android:minHeight">
+      @dimen/car_standard_small_size
+    </item>
+    <item name="android:elevation">
+      @dimen/car_standard_elevation
+    </item>
+  </style>
+  <style name="CarButtonGroup">
+    <item name="android:paddingLeft">
+      @dimen/car_standard_margin
+    </item>
+    <item name="android:paddingTop">
+      @dimen/car_standard_margin
+    </item>
+    <item name="android:paddingRight">
+      @dimen/car_standard_margin
+    </item>
+    <item name="android:paddingBottom">
+      @dimen/car_standard_margin
+    </item>
+    <item name="android:elevation">
+      @dimen/car_standard_elevation
+    </item>
+  </style>
+  <style name="CarFloatingCard">
+    <item name="android:background">
+      @color/car_card_background
+    </item>
+    <item name="android:paddingLeft">
+      @dimen/car_standard_margin
+    </item>
+    <item name="android:paddingTop">
+      @dimen/car_standard_margin
+    </item>
+    <item name="android:paddingRight">
+      @dimen/car_standard_margin
+    </item>
+    <item name="android:paddingBottom">
+      @dimen/car_standard_margin
+    </item>
+    <item name="android:layout_marginLeft">
+      @dimen/car_standard_margin
+    </item>
+    <item name="android:layout_marginTop">
+      @dimen/car_standard_margin
+    </item>
+    <item name="android:layout_marginRight">
+      @dimen/car_standard_margin
+    </item>
+    <item name="android:layout_marginBottom">
+      @dimen/car_standard_margin
+    </item>
+    <item name="android:minWidth">
+      @dimen/car_min_card_size
+    </item>
+    <item name="android:minHeight">
+      @dimen/car_min_card_size
+    </item>
+    <item name="android:elevation">
+      @dimen/car_standard_elevation
+    </item>
+  </style>
+</resources>
+

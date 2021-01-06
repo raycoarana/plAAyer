@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/car_masked_ripple_background" android:focusable="true" android:layout_width="fill_parent" android:layout_height="@dimen/car_list_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/icon" android:layout_width="@dimen/car_list_item_icon_size" android:layout_height="@dimen/car_list_item_icon_size" android:layout_marginRight="@dimen/car_list_item_icon_right_margin" android:scaleType="centerCrop" />
+    <TextView android:layout_gravity="center_vertical" android:id="@+id/text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" style="@style/CarBody1" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/right_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/car_list_item_right_icon_margin" android:scaleType="center" />
+</LinearLayout>

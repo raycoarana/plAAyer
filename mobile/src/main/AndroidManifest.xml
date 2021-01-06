@@ -42,7 +42,7 @@
 
         <meta-data
             android:name="com.bugsnag.android.API_KEY"
-            android:value="${bugsnag_key}"/>
+            android:value="${bugsnagKey}"/>
         <meta-data android:name="com.bugsnag.android.DETECT_ANRS"
             android:value="true"/>
     </application>

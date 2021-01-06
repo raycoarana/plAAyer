@@ -13,6 +13,7 @@ import okhttp3.MediaType.Companion.toMediaType
 import okhttp3.OkHttpClient
 import okhttp3.Request
 import okhttp3.RequestBody
+import okhttp3.RequestBody.Companion.toRequestBody
 import java.util.*
 import javax.inject.Inject
 
@@ -42,8 +43,6 @@ class ChannelsNetworkDataSource @Inject constructor(
                 .mapSingle { body -> epgDtoReaderFactory.create(body.byteStream()) }
 
     fun checkEpgLastUpdate(): SimplePromise<Date> {
-        val promise = awex.newAwexPromise<Date, Unit>()
-
         val content = "{\n" +
                 "  repository(owner: \"HelmerLuzo\", name: \"TDTChannels_EPG\") {\n" +
                 "    object(expression: \"master\") {\n" +
@@ -60,7 +59,7 @@ class ChannelsNetworkDataSource @Inject constructor(
 
         val request = Request.Builder()
                 .url("https://api.github.com/graphql")
-                .post(RequestBody.create("application/json".toMediaType(), content.toByteArray()))
+                .post(content.toByteArray().toRequestBody("application/json".toMediaType()))
                 .build()
         return okHttpClient.newCallWithPromise(awex, request).mapSingle {
             Date() // TODO

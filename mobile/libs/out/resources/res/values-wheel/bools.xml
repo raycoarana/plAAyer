@@ -1,0 +1,6 @@
+<resources>
+  <bool name="has_wheel">
+    true
+  </bool>
+</resources>
+

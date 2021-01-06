@@ -1,0 +1,328 @@
+<resources>
+  <style name="CardView" parent="@style/Base.CardView"/>
+  <style name="Base.CardView" parent="@android:style/Widget">
+    <item name="cardCornerRadius">
+      @dimen/cardview_default_radius
+    </item>
+    <item name="cardElevation">
+      @dimen/cardview_default_elevation
+    </item>
+    <item name="cardMaxElevation">
+      @dimen/cardview_default_elevation
+    </item>
+    <item name="cardUseCompatPadding">
+      false
+    </item>
+    <item name="cardPreventCornerOverlap">
+      true
+    </item>
+  </style>
+  <style name="CarAppTheme" parent="@android:style/Theme.Material.NoActionBar.Fullscreen">
+    <item name="android:textAppearance">
+      @style/CarBody1
+    </item>
+    <item name="carButtonStyle">
+      @style/CarButton
+    </item>
+    <item name="carCardStyle">
+      @style/CarFloatingCard
+    </item>
+    <item name="carTextViewStyle">
+      @style/CarTextView
+    </item>
+  </style>
+  <style name="CarArtist">
+    <item name="android:textSize">
+      @dimen/car_body_2_size
+    </item>
+    <item name="android:textStyle">
+      normal
+    </item>
+    <item name="android:textColor">
+      @color/car_grey_50
+    </item>
+    <item name="android:includeFontPadding">
+      false
+    </item>
+    <item name="android:fontFamily">
+      sans-serif-condensed
+    </item>
+  </style>
+  <style name="CarBody1">
+    <item name="android:textSize">
+      @dimen/car_body_1_size
+    </item>
+    <item name="android:textStyle">
+      normal
+    </item>
+    <item name="android:textColor">
+      @color/car_body1
+    </item>
+    <item name="android:duplicateParentState">
+      true
+    </item>
+    <item name="android:fontFamily">
+      sans-serif-condensed
+    </item>
+  </style>
+  <style name="CarBody2">
+    <item name="android:textSize">
+      @dimen/car_body_2_size
+    </item>
+    <item name="android:textStyle">
+      normal
+    </item>
+    <item name="android:textColor">
+      @color/car_body2
+    </item>
+    <item name="android:duplicateParentState">
+      true
+    </item>
+    <item name="android:includeFontPadding">
+      false
+    </item>
+    <item name="android:fontFamily">
+      sans-serif-condensed
+    </item>
+  </style>
+  <style name="CarButton" parent="@android:style/Widget.ImageButton">
+    <item name="android:paddingLeft">
+      @dimen/car_standard_margin
+    </item>
+    <item name="android:paddingTop">
+      @dimen/car_standard_margin
+    </item>
+    <item name="android:paddingRight">
+      @dimen/car_standard_margin
+    </item>
+    <item name="android:paddingBottom">
+      @dimen/car_standard_margin
+    </item>
+    <item name="android:minWidth">
+      @dimen/car_standard_small_size
+    </item>
+    <item name="android:minHeight">
+      @dimen/car_standard_small_size
+    </item>
+  </style>
+  <style name="CarButtonGroup">
+    <item name="android:paddingLeft">
+      @dimen/car_standard_margin
+    </item>
+    <item name="android:paddingTop">
+      @dimen/car_standard_margin
+    </item>
+    <item name="android:paddingRight">
+      @dimen/car_standard_margin
+    </item>
+    <item name="android:paddingBottom">
+      @dimen/car_standard_margin
+    </item>
+  </style>
+  <style name="CarCaption">
+    <item name="android:textSize">
+      @dimen/car_caption_size
+    </item>
+    <item name="android:textStyle">
+      normal
+    </item>
+    <item name="android:textColor">
+      @color/car_caption
+    </item>
+    <item name="android:fontFamily">
+      sans-serif-condensed
+    </item>
+  </style>
+  <style name="CarContentBrowseNotification">
+    <item name="android:textSize">
+      @dimen/car_body_2_size
+    </item>
+    <item name="android:textStyle">
+      normal
+    </item>
+    <item name="android:textColor">
+      @color/car_grey_100
+    </item>
+    <item name="android:fontFamily">
+      sans-serif-condensed
+    </item>
+  </style>
+  <style name="CarDrawerArrowDrawable">
+    <item name="carArrowColor">
+      @android:color/white
+    </item>
+    <item name="carArrowSpinBars">
+      true
+    </item>
+    <item name="carArrowDrawableSize">
+      @dimen/car_drawer_header_menu_button_size
+    </item>
+    <item name="carArrowGapBetweenBars">
+      6.0dip
+    </item>
+    <item name="carArrowTopBottomBarSize">
+      18.0dip
+    </item>
+    <item name="carArrowMiddleBarSize">
+      24.0dip
+    </item>
+    <item name="carArrowBarSize">
+      28.0dip
+    </item>
+    <item name="carArrowThickness">
+      2.5dip
+    </item>
+  </style>
+  <style name="CarFilterNumber" parent="@style/CarTitle">
+    <item name="android:textColor">
+      @color/car_teal_700
+    </item>
+  </style>
+  <style name="CarFloatingCard">
+    <item name="android:background">
+      @color/car_card_background
+    </item>
+    <item name="android:paddingLeft">
+      @dimen/car_standard_margin
+    </item>
+    <item name="android:paddingTop">
+      @dimen/car_standard_margin
+    </item>
+    <item name="android:paddingRight">
+      @dimen/car_standard_margin
+    </item>
+    <item name="android:paddingBottom">
+      @dimen/car_standard_margin
+    </item>
+    <item name="android:layout_marginLeft">
+      @dimen/car_standard_margin
+    </item>
+    <item name="android:layout_marginTop">
+      @dimen/car_standard_margin
+    </item>
+    <item name="android:layout_marginRight">
+      @dimen/car_standard_margin
+    </item>
+    <item name="android:layout_marginBottom">
+      @dimen/car_standard_margin
+    </item>
+    <item name="android:minWidth">
+      @dimen/car_min_card_size
+    </item>
+    <item name="android:minHeight">
+      @dimen/car_min_card_size
+    </item>
+  </style>
+  <style name="CarHeadline1">
+    <item name="android:textSize">
+      @dimen/car_headline_1_size
+    </item>
+    <item name="android:textStyle">
+      normal
+    </item>
+    <item name="android:textColor">
+      @color/car_headline1
+    </item>
+    <item name="android:fontFamily">
+      sans-serif-condensed
+    </item>
+  </style>
+  <style name="CarHeadline2">
+    <item name="android:textSize">
+      @dimen/car_headline_2_size
+    </item>
+    <item name="android:textStyle">
+      normal
+    </item>
+    <item name="android:textColor">
+      @color/car_headline1
+    </item>
+    <item name="android:fontFamily">
+      sans-serif-condensed
+    </item>
+  </style>
+  <style name="CarLabelButton">
+    <item name="android:textAppearance">
+      @style/CarBody1
+    </item>
+  </style>
+  <style name="CarMicro">
+    <item name="android:textSize">
+      @dimen/car_micro_size
+    </item>
+    <item name="android:textStyle">
+      normal
+    </item>
+    <item name="android:textColor">
+      @color/car_micro
+    </item>
+    <item name="android:fontFamily">
+      sans-serif-condensed
+    </item>
+  </style>
+  <style name="CarScribbleFilterText" parent="@style/CarHeadline1">
+    <item name="android:textColor">
+      @color/car_grey_600
+    </item>
+  </style>
+  <style name="CarTextView">
+    <item name="android:textAppearance">
+      @style/CarBody1
+    </item>
+    <item name="android:ellipsize">
+      end
+    </item>
+    <item name="android:maxLength">
+      120
+    </item>
+  </style>
+  <style name="CarTitle">
+    <item name="android:textSize">
+      @dimen/car_title_size
+    </item>
+    <item name="android:textStyle">
+      normal
+    </item>
+    <item name="android:textColor">
+      @color/car_title
+    </item>
+    <item name="android:includeFontPadding">
+      false
+    </item>
+    <item name="android:fontFamily">
+      sans-serif-condensed
+    </item>
+  </style>
+  <style name="CarToast">
+    <item name="android:textSize">
+      @dimen/car_body_2_size
+    </item>
+    <item name="android:textStyle">
+      normal
+    </item>
+    <item name="android:textColor">
+      @color/car_grey_100
+    </item>
+    <item name="android:fontFamily">
+      sans-serif-condensed
+    </item>
+  </style>
+  <style name="Toast">
+    <item name="android:textSize">
+      @dimen/car_title_size
+    </item>
+    <item name="android:textStyle">
+      normal
+    </item>
+    <item name="android:textColor">
+      @color/car_grey_100
+    </item>
+    <item name="android:includeFontPadding">
+      false
+    </item>
+    <item name="android:fontFamily">
+      sans-serif-condensed
+    </item>
+  </style>
+</resources>
+

@@ -13,7 +13,6 @@ import com.raycoarana.plaayer.core.di.CarActivityModule
 import com.raycoarana.plaayer.databinding.CarActivityMainBinding
 import javax.inject.Inject
 
-
 class CarActivity : CarActivity() {
 
     @Inject

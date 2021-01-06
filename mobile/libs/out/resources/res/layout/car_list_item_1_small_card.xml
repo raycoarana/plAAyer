@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:orientation="horizontal" android:focusable="true" android:layout_width="fill_parent" android:layout_height="@dimen/car_list_item_height_small" app:cardBackgroundColor="@color/car_card"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/car_masked_ripple_background" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/icon" android:visibility="gone" android:layout_width="@dimen/car_list_item_icon_size" android:layout_height="@dimen/car_list_item_icon_size" android:layout_marginRight="40.0dip" android:scaleType="centerCrop" />
+        <TextView android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@+id/title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:singleLine="true" android:layout_weight="1.0" style="@style/CarBody1" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <TextView android:ellipsize="end" android:gravity="right" android:layout_gravity="center_vertical" android:id="@+id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="275.0dip" android:singleLine="true" style="@style/CarCaption" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/right_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/car_list_item_right_icon_margin" android:scaleType="center" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

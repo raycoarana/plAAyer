@@ -1,0 +1,6 @@
+<resources>
+  <integer name="car_fab_animation_duration">
+    150
+  </integer>
+</resources>
+

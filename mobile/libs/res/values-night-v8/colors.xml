@@ -1,0 +1,107 @@
+<resources>
+  <color name="car_body1">
+    @color/car_body1_light
+  </color>
+  <color name="car_body2">
+    @color/car_body2_light
+  </color>
+  <color name="car_button_background">
+    @color/car_button_background_night
+  </color>
+  <color name="car_caption">
+    @color/car_caption_light
+  </color>
+  <color name="car_card">
+    @color/car_card_dark
+  </color>
+  <color name="car_card_background">
+    @color/car_button_background_night
+  </color>
+  <color name="car_card_ripple_background">
+    @color/car_card_ripple_background_light
+  </color>
+  <color name="car_card_ripple_background_inverse">
+    @color/car_card_ripple_background_dark
+  </color>
+  <color name="car_card_ripple_light_color_background">
+    @color/car_card_ripple_light_color_background_light
+  </color>
+  <color name="car_card_tint">
+    @color/car_tint_light
+  </color>
+  <color name="car_controller_ripple">
+    @color/car_controller_ripple_night
+  </color>
+  <color name="car_headline1">
+    @color/car_headline1_light
+  </color>
+  <color name="car_headline2">
+    @color/car_headline2_light
+  </color>
+  <color name="car_highlight_selected">
+    @color/car_highlight_selected_dark
+  </color>
+  <color name="car_list_divider">
+    #1fffffff
+  </color>
+  <color name="car_micro">
+    @color/car_micro_light
+  </color>
+  <color name="car_overscroll_glow">
+    @color/car_overscroll_glow_dark
+  </color>
+  <color name="car_scrollbar_thumb">
+    @color/car_scrollbar_thumb_night
+  </color>
+  <color name="car_scrollbar_thumb_inverse">
+    @color/car_scrollbar_thumb_day
+  </color>
+  <color name="car_tint">
+    @color/car_tint_night
+  </color>
+  <color name="car_tint_inverse">
+    @color/car_tint_day
+  </color>
+  <color name="car_title">
+    @color/car_title_light
+  </color>
+  <color name="car_toggle_ring_color">
+    @color/car_toggle_ring_color_night
+  </color>
+  <color name="car_touch_ripple">
+    @color/car_touch_ripple_night
+  </color>
+  <color name="dialer_action_bar">
+    @color/car_blue_900
+  </color>
+  <color name="drawer_background">
+    @color/drawer_background_night
+  </color>
+  <color name="error_toast_card_background">
+    @color/error_toast_card_background_night
+  </color>
+  <color name="search_box_card">
+    @color/search_box_card_night
+  </color>
+  <color name="search_box_map_overlay">
+    @color/search_box_map_overlay_night
+  </color>
+  <color name="search_box_text_primary">
+    @color/search_box_text_primary_night
+  </color>
+  <color name="search_box_text_secondary">
+    @color/search_box_text_secondary_night
+  </color>
+  <color name="status_bar_drawer_closed">
+    @color/status_bar_drawer_closed_night
+  </color>
+  <color name="status_bar_drawer_closed_inverse">
+    @color/status_bar_drawer_closed_day
+  </color>
+  <color name="status_bar_drawer_opened">
+    @color/status_bar_drawer_opened_night
+  </color>
+  <color name="car_filter_match">
+    @color/car_teal_400
+  </color>
+</resources>

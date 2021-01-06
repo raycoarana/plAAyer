@@ -1,0 +1,5 @@
+<resources>
+  <dimen name="car_list_item_height_small">
+    72.0dip
+  </dimen>
+</resources>

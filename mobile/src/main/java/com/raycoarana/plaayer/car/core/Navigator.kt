@@ -2,8 +2,8 @@ package com.raycoarana.plaayer.car.core
 
 import android.content.Context
 import android.os.Bundle
-import android.support.v4.app.Fragment
 import android.widget.Toast
+import androidx.fragment.app.Fragment
 import com.google.android.apps.auto.sdk.CarToast
 import com.raycoarana.plaayer.R
 import com.raycoarana.plaayer.car.main.domain.AppSection

@@ -1,0 +1,198 @@
+<resources>
+  <dimen name="car_list_item_height_small">
+    72.0dip
+  </dimen>
+  <dimen name="car_drawer_margin_right">
+    96.0dip
+  </dimen>
+  <dimen name="car_paged_list_view_scrollbar_thumb_margin">
+    8.0dip
+  </dimen>
+  <dimen name="car_abc_keyboard_filter_delete_btn_size">
+    36.0dip
+  </dimen>
+  <dimen name="car_abc_keyboard_filter_text_width">
+    60.0dip
+  </dimen>
+  <dimen name="car_action_bar_icon_padding">
+    10.0dip
+  </dimen>
+  <dimen name="car_action_bar_margin">
+    15.0dip
+  </dimen>
+  <dimen name="car_app_layout_icon_width">
+    42.0dip
+  </dimen>
+  <dimen name="car_app_layout_search_box_small_margin">
+    16.0dip
+  </dimen>
+  <dimen name="car_app_layout_search_box_small_width">
+    320.0dip
+  </dimen>
+  <dimen name="car_body_1_size">
+    32.0dip
+  </dimen>
+  <dimen name="car_body_2_size">
+    26.0dip
+  </dimen>
+  <dimen name="car_caption_size">
+    24.0dip
+  </dimen>
+  <dimen name="car_card_bottom_margin">
+    8.0dip
+  </dimen>
+  <dimen name="car_card_margin">
+    96.0dip
+  </dimen>
+  <dimen name="car_card_max_width">
+    768.0dip
+  </dimen>
+  <dimen name="car_card_view_corner_radius">
+    2.0dip
+  </dimen>
+  <dimen name="car_card_view_elevation">
+    8.0dip
+  </dimen>
+  <dimen name="car_divider_height">
+    1.0dip
+  </dimen>
+  <dimen name="car_drawer_header_cardview_overlay_width">
+    688.0dip
+  </dimen>
+  <dimen name="car_drawer_header_height">
+    96.0dip
+  </dimen>
+  <dimen name="car_drawer_header_menu_button_size">
+    96.0dip
+  </dimen>
+  <dimen name="car_drawer_item_max_width">
+    788.0dip
+  </dimen>
+  <dimen name="car_drawer_max_width">
+    884.0dip
+  </dimen>
+  <dimen name="car_drawer_standard_width">
+    704.0dip
+  </dimen>
+  <dimen name="car_fab_focused_growth">
+    1.1999817dip
+  </dimen>
+  <dimen name="car_fab_focused_stroke_width">
+    8.0dip
+  </dimen>
+  <dimen name="car_filter_icon_height">
+    96.0dip
+  </dimen>
+  <dimen name="car_filter_icon_margin_end">
+    32.0dip
+  </dimen>
+  <dimen name="car_filter_icon_size">
+    96.0dip
+  </dimen>
+  <dimen name="car_filter_icon_width">
+    112.0dip
+  </dimen>
+  <dimen name="car_filter_number_margin_start">
+    24.0dip
+  </dimen>
+  <dimen name="car_headline_1_size">
+    45.0dip
+  </dimen>
+  <dimen name="car_headline_2_size">
+    38.0dip
+  </dimen>
+  <dimen name="car_icon">
+    36.0dip
+  </dimen>
+  <dimen name="car_last_card_peek_amount">
+    16.0dip
+  </dimen>
+  <dimen name="car_list_item_height">
+    88.0dip
+  </dimen>
+  <dimen name="car_list_item_icon_right_margin">
+    32.0dip
+  </dimen>
+  <dimen name="car_list_item_icon_size">
+    56.0dip
+  </dimen>
+  <dimen name="car_list_item_icon_size_extra_small">
+    28.0dip
+  </dimen>
+  <dimen name="car_list_item_icon_size_small">
+    32.0dip
+  </dimen>
+  <dimen name="car_list_item_right_icon_margin">
+    20.0dip
+  </dimen>
+  <dimen name="car_max_drawer_width">
+    968.0dip
+  </dimen>
+  <dimen name="car_micro_size">
+    20.0dip
+  </dimen>
+  <dimen name="car_min_card_size">
+    128.0dip
+  </dimen>
+  <dimen name="car_min_up_down_button_height">
+    160.0dip
+  </dimen>
+  <dimen name="car_paged_list_view_button_background_inset">
+    24.0dip
+  </dimen>
+  <dimen name="car_paged_list_view_pagination_width">
+    96.0dip
+  </dimen>
+  <dimen name="car_sample_row_height">
+    128.0dip
+  </dimen>
+  <dimen name="car_standard_elevation">
+    2.0dip
+  </dimen>
+  <dimen name="car_standard_margin">
+    16.0dip
+  </dimen>
+  <dimen name="car_standard_medium_size">
+    96.0dip
+  </dimen>
+  <dimen name="car_standard_small_size">
+    64.0dip
+  </dimen>
+  <dimen name="car_standard_width">
+    800.0dip
+  </dimen>
+  <dimen name="car_text_vertical_margin">
+    2.0dip
+  </dimen>
+  <dimen name="car_title_size">
+    26.0dip
+  </dimen>
+  <dimen name="car_toast_horizontal_padding">
+    22.0dip
+  </dimen>
+  <dimen name="car_toast_padding">
+    8.0dip
+  </dimen>
+  <dimen name="car_touch_feedback_radius">
+    32.0dip
+  </dimen>
+  <dimen name="cardview_compat_inset_shadow">
+    1.0dip
+  </dimen>
+  <dimen name="cardview_default_elevation">
+    2.0dip
+  </dimen>
+  <dimen name="cardview_default_radius">
+    2.0dip
+  </dimen>
+  <dimen name="max_thumb_height">
+    128.0dip
+  </dimen>
+  <dimen name="min_thumb_height">
+    48.0dip
+  </dimen>
+  <dimen name="rail_height">
+    80.0dip
+  </dimen>
+</resources>
+

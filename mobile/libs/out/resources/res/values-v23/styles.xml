@@ -1,0 +1,8 @@
+<resources>
+  <style name="CardView" parent="@style/Base.CardView">
+    <item name="cardBackgroundColor">
+      ?android:colorBackgroundFloating
+    </item>
+  </style>
+</resources>
+

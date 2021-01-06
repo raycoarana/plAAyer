@@ -1,7 +1,7 @@
 package com.raycoarana.plaayer.core.di
 
 import android.content.Context
-import android.support.v4.app.Fragment
+import androidx.fragment.app.Fragment
 import com.raycoarana.plaayer.car.main.di.CarFragmentComponent
 import com.raycoarana.plaayer.common.di.fromCarActivityComponentOf
 
